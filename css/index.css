@@ -1,0 +1,11 @@
+.navbar.navbar-inverse {
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  position: relative;
+  z-index: setIndex(animation); }
+
+.navbar.navbar-inverse:hover {
+  -webkit-transform: translateY(400px);
+  -ms-transform: translateY(400px);
+  transform: translateY(400px); }

@@ -5,7 +5,23 @@ $COLORS
 /**
 * Branding colors
 */
+/*///////////////////////////////////////////////////*\
+
+$ARRAY
+
+/*/
 /*//////////////////////////////////////////////////////*\
 $LINKS
 
 /*/
+.navbar.navbar-inverse {
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease; }
+
+.navbar.navbar-inverse:hover div[class=container-fluid] li {
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-transform: translate3d(30%, 100px, 50px);
+  transform: translate3d(30%, 100px, 50px); }

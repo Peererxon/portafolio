@@ -1,0 +1,10 @@
+.navbar.navbar-inverse{
+    transition:1s ease;
+    
+}
+
+.navbar.navbar-inverse:hover div[class=container-fluid] li{
+    transition: 1s ease;
+    transform: translate3d(30%,100px,50px);
+}
+
