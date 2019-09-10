@@ -1,6 +1,7 @@
 // Librerias,Settings y Variables
 @import "lib/variables";
 @import "lib/funciones";
+@import "lib/transitions";
 
 // Elementos Base (link,botones,layout,etc)
 @import "base/links";
@@ -11,7 +12,6 @@
 // Components
 @import "components/mixins";
 @import "components/grid";
-
 
 //pages
 @import "pages/index";//esto esta de ejemplo,no hace un coño. se m ocurrio a mi xd

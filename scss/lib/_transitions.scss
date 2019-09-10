@@ -1,0 +1,18 @@
+/**
+* HEADER
+*/
+
+.navbar.navbar-inverse{
+    transition:1s ease;
+    transition-delay: 3s;
+    transform:translateX(100px);
+    
+}
+
+.navbar.navbar-inverse:hover div[class=container-fluid] li{
+    transition: 1s ease;
+    transform: translate3d(30%,100px,50px);
+    transition-delay: 5s;
+}
+
+//HEADER
