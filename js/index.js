@@ -1,14 +1,12 @@
-/* Window.onload(function(){
-console.log('Cargo el documento a los ${document} segundos')
-}); */
+window.onload = function(){
+    module();
+}
 
-/* $(window).on("load", function() {
-
-    // Executes when complete page is fully loaded, including
-    // all frames, objects and images
-    alert("Window is loaded");
-}); */
-
-$(Document).ready(function(){
-    
-})
+function module(){
+    let nav = document.getElementById("nav");
+     
+     (function(){
+        console.log(nav.style.animationName="navbarON");
+        console.log(nav.style.animation);
+     })();
+}
