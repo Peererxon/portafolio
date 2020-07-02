@@ -1,5 +1,7 @@
 import React from 'react'
 
-const Home = ()=> {
-    
+const Home = ({ children })=> {
+    {children}
 }
+
+export default Home;
