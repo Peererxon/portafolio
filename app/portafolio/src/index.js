@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Portafolio from './App';
+import './shared/styles/bodyStyles.scss'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Portafolio />
   </React.StrictMode>,
   document.getElementById('root')
 );
