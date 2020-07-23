@@ -1,34 +1,40 @@
-import React from 'react';
-import {Navbar,NavDropdown,Nav} from 'react-bootstrap';
+import React, { useEffect } from "react";
+import M from "materialize-css/dist/js/materialize.min.js";
+//import { BrowserRouter, Route } from "react-router-dom";
+import "materialize-css/dist/css/materialize.min.css";
 
-import './styles/header.scss'
 const Header = () => {
-    return(
-        <div className = "header">
-            <Navbar bg="dark" expand="lg">
-                <Navbar.Brand href="#home">Anderson Gil</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  useEffect(() => {
+    var elem = document.querySelector(".sidenav");
+    var instance = M.Sidenav.init(elem, {
+        Edge: "left",
+        inDuration: 250
+    });
+  },[]);
 
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Skills" id="basic-nav-dropdown">
-
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-
-                        </NavDropdown>
-
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+  return(
+    <div>
+      <nav>
+        <div className="nav-wrapper black">
+          <a href="#!" className="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
         </div>
-    )
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  );
 }
 
 export default Header;
