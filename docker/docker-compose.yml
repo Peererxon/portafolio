@@ -3,9 +3,9 @@ version: "3"
 services:
   portafolioApp: 
     image: node:12.18.0-stretch
-    #user: node:node
-    working_dir: /home/react
-    #command: npm run start
+    user: node:node
+    working_dir: /home/react/portafolio/
+    command: npm run start
     volumes:
       - ../app:/home/react
     ports:
