@@ -6,8 +6,13 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from "materialize-css/dist/js/materialize.min.js";
 
 //import M from 'materialize-css';
-import Header from './shared/Header';
-import NotFound from './notfound/NotFount';
+import NotFound from '../../notfound/NotFount';
+import Preloader from '../components/Preloader_line';
+
+//Lazy components
+const Header = React.lazy( () => import ('../Header') ); //usando code splitting con rutas
+
+//EndLazy components
 
 function App() {
 
@@ -18,16 +23,14 @@ function App() {
         inDuration: 250
     });
   },[]);
-  
   return (
     <BrowserRouter>
-    <Switch>
-      <Route exact path= "/" component = {Header} />
-      <Route exact path="*" component = {NotFound}/>
-    </Switch>
-      {/* <div className="App">
-          <Header/>
-      </div> */}
+      <Suspense fallback={<Preloader/>}>
+        <Switch>
+          <Route exact path= "/" component = {Header} />
+          <Route exact path="*" component = {NotFound}/>
+        </Switch>
+      </Suspense>
     
     </BrowserRouter>
   );

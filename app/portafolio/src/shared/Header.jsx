@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 //import M from "materialize-css/dist/js/materialize.min.js";
 //import { BrowserRouter, Route } from "react-router-dom";
 import "materialize-css/dist/css/materialize.min.css";
@@ -28,7 +28,6 @@ const Header = () => {
           <li><a href="mobile.html">Mobile</a></li>
         </ul>
       </header>
-
     </div>
   );
 }

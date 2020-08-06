@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Portafolio from './App';
+import Portafolio from './shared/routes/App';
 import './shared/styles/bodyStyles.scss'
 import * as serviceWorker from './serviceWorker';
 
