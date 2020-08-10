@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Hero from './Hero';
 
-const Home = ({ children })=> {
-    {children}
-}
+const Home = ()=> (
+    <Hero />
+)
 
 export default Home;
