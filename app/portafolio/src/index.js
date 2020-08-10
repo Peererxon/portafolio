@@ -1,13 +1,25 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Portafolio from './shared/routes/App';
 import './shared/styles/bodyStyles.scss'
 import * as serviceWorker from './serviceWorker';
 
+export const contextoPadre = React.createContext()
+const idiomas = {
+  "español": [
+      {nombre:"anderson",apellido:"gil"},
+      {texto1:"crallon",parrafo:"eres un webon"}
+  ],
+};
+
+//export const [ idioma,setIdioma ] = useState("")
+
 ReactDOM.render(
   <React.StrictMode>
-    <Portafolio />
+    <contextoPadre.Provider value = {idiomas}>
+      <Portafolio />
+    </contextoPadre.Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
