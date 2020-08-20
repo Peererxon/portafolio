@@ -2,7 +2,6 @@ import React,{useContext} from "react";
 import "./styles/Header.scss";
 //import M from "materialize-css/dist/js/materialize.min.js";
 //import { BrowserRouter, Route } from "react-router-dom";
-import "materialize-css/dist/css/materialize.min.css";
 import { contextoPadre } from "..";
 
 const Header = () => {
