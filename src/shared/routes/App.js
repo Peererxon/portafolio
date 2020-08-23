@@ -1,5 +1,5 @@
 import React, {Suspense,useEffect } from 'react';
-import {HashRouter,Switch,Route} from 'react-router-dom'
+import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import './App.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -12,7 +12,6 @@ import Preloader from '../components/Preloader_line';
 import Layout from '../Layout';
 //import Home from '../../home/Home';
 //Lazy components
-const Header = React.lazy( () => import ('../Header') );
 const Home = React.lazy( () => import ('../../home/Home') ); //usando code splitting con rutas
 
 //EndLazy components
@@ -27,7 +26,7 @@ function App() {
     });
   },[]);
   return (
-    <HashRouter basename ={process.env.PUBLIC_URL} >
+    <BrowserRouter basename ={process.env.PUBLIC_URL} >
       <Layout>
         <Suspense fallback={<Preloader/>}>
           <Switch>
@@ -37,7 +36,7 @@ function App() {
         </Suspense>
       </Layout>
     
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
