@@ -1,0 +1,19 @@
+@import '../../shared/styles/vars.scss';
+
+.backgraundHero{
+    background-image: url("../../shared/src/frontal-min.png"),linear-gradient(141deg,#111317 10%,#45484e 51%,#111317 75%);
+    opacity: 0.5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    max-width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width:$PhonesLandscape){
+
+}

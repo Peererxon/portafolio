@@ -1,17 +1,20 @@
 import React from 'react'
+import './styles/hero.scss';
 
-const Hero = ({ children }) => {
+const Hero = () => {
     return(
         <div>
             <section>
-                <div className ="hero">
-                    {children}   
-                    <div>
-                    <p>Hola, mi nombre es </p> <br></br>
-                    <h1>Anderson Gil</h1> <br></br>
-                    <p>Desarrollador FrontEnd</p>  
+            <div className="wrap-hero">
+                    <div className="backgraundHero">
+                        <div className="backgraundHero__h2">
+                            <h2>Hola, soy Anderson Gil</h2>
+                        </div>
+                        <div className="backgraundHero__p">
+                            <p>Desarrollador web</p>
+                        </div>
                     </div>
-                </div>
+                </div>{/* <!--EndHero--> */}
             </section>
         </div>
     )

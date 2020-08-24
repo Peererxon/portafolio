@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import Portafolio from './shared/routes/App';
-import './shared/styles/bodyStyles.scss'
+
 import * as serviceWorker from './serviceWorker';
 
 export const contextoPadre = React.createContext()
