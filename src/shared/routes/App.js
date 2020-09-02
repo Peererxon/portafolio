@@ -3,8 +3,8 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import './App.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import 'materialize-css/dist/css/materialize.min.css';
-import M from "materialize-css/dist/js/materialize.min.js";
-
+//import M from "materialize-css/dist/js/materialize.min.js";
+//const M = React.lazy( () => import ('materialize-css/dist/js/materialize.min.js') );
 //import M from 'materialize-css';
 import NotFound from '../../notfound/NotFount';
 import Preloader from '../components/Preloader_line';
@@ -19,11 +19,14 @@ const Home = React.lazy( () => import ('../../home/Home') ); //usando code split
 function App() {
 
   useEffect(() => {
-    var elem = document.querySelector(".sidenav"); 
-    var instance = M.Sidenav.init(elem, {
-        Edge: "left",
-        inDuration: 250
-    });
+    var elem = document.querySelector(".sidenav");
+    import ('materialize-css/dist/js/materialize.min.js').then(M => {
+      
+      var instance = M.Sidenav.init(elem, {
+          Edge: "left",
+          inDuration: 250
+      });
+    })
   },[]);
   return (
     <BrowserRouter basename ={process.env.PUBLIC_URL} >
