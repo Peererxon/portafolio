@@ -8,11 +8,10 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
+    "react-awesome-reveal": "^3.1.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3",
-    "react-transition-group": "^4.4.1",
-    "react-waypoint": "^9.0.3"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "predeploy": "npm run build",
