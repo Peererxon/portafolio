@@ -13,10 +13,10 @@ const Header = () => {
       <header>
         <nav>
           <div className="nav-wrapper black">
-            <Link to={process.env.PUBLIC_URL}>
+            <Link to={process.env.PUBLIC_URL} className ="tooltipped" data-position="right" data-tooltip="Hola! Me llamo Anderson Gil">
               <img src={ Logo } alt="imagen principal" className="brand-logo circle responsive-img" />
             </Link>
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+            <Link to="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
             <ul className="right hide-on-med-and-down">
               <li><a href="sass.html">Sass {contexto.español[0].nombre} </a></li>
               <li><a href="badges.html">Components</a></li>

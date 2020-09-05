@@ -20,11 +20,17 @@ function App() {
 
   useEffect(() => {
     var elem = document.querySelector(".sidenav");
+    var elem2 = document.querySelector(".tooltipped");
     import ('materialize-css/dist/js/materialize.min.js').then(M => {
       
       var instance = M.Sidenav.init(elem, {
           Edge: "left",
           inDuration: 250
+      });
+      var tooltip= M.Tooltip.init(elem2,{
+        transitionMovement:20,
+
+
       });
     })
   },[]);
