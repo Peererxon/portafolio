@@ -1,11 +1,11 @@
 import React from 'react';
 import Hero from './Hero';
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 const Home = ()=> (
-    <Fade direction="top-left">
+    <Slide direction="left">
         <Hero />
-    </Fade>
+    </Slide>
 )
 
 export default Home;

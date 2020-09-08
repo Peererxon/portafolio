@@ -6,14 +6,16 @@ const Hero = () => {
     return(
         <div>
             <section>
-            <div className="wrap-hero">
-                    <div className="backgraundHero" style= {{background: `linear-gradient(141deg, rgb(17 19 23 / 67%) 10%, rgb(69 72 78 / 59%) 51%, rgb(17 19 23 / 88%) 75%),url(${background}) no-repeat center`}}>
-                        <div className="backgraundHero__p">
-                            <p>Hola, soy Anderson Gil</p>
+                <div className="wrap-hero">
+                    <div className="backgraundHero" style= {{background: `linear-gradient(141deg, rgba(17, 19, 23, 0.67) 10%, rgb(69 72 78 / 0%) 51%, rgba(17, 19, 23, 0.88) 75%),url(${background}) no-repeat center`}}>
+                        <div className="backgraundHero__welcome">
+                            <span className="backgraundHero__descript">Hola, soy 
+                                <h1 className="title">Anderson Gil</h1>
+                            </span>
                         </div>
 
-                        <div className="backgraundHero__h2">
-                            <h2>Desarrollador web</h2>
+                        <div>
+                            <h2 className="backgraundHero__descript">Desarrollador web</h2>
                         </div>
                     </div>
                 </div>{/* <!--EndHero--> */}
