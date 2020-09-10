@@ -1,6 +1,6 @@
 import React from 'react'
-import './styles/hero.scss';
-import background from '../shared/src/hero_test.svg';
+import '../styles/hero.scss';
+import background from '../../shared/src/hero_test.svg';
 
 const Hero = () => {
     return(
