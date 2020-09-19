@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
+import './i18n';
+
 import Portafolio from './shared/routes/App';
 
 import * as serviceWorker from './serviceWorker';
