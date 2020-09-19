@@ -1,7 +1,7 @@
 import React,{useContext} from "react";
 import { Link } from "react-router-dom";
 import "./styles/Header.scss";
-import Logo from './src/frontal-min.png';
+import Logo from './Statics/frontal-min.png';
 //import M from "materialize-css/dist/js/materialize.min.js";
 //import { BrowserRouter, Route } from "react-router-dom";
 import { contextoPadre } from "..";
