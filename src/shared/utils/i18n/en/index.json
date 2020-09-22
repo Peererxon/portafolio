@@ -1,8 +1,15 @@
 {
     "home": {
-        "welcome": "Welcome Message",
-        "roll":"Web developer",
-        "introduction": "This text comes from i18next and is provided in english."
+        "hello": "Hi, i am",
+        "roll":"Web Developer",
+        "quienSoy": "Soy un entusiasta Desarrollador FrontEnd, geek amante del trabajo en equipo",
+        "resumen":  "Amante de la tecnología🤖, la industria 4.0 🏭 y la innovación en la era digital.",
+        "servicios": {
+            "titulo": "Servicios",
+            "Paginas": "Paginas Web corporativas",
+            "ecommerces":"Tiendas virtuales",
+            "apps":"aplicaciones webs y nativas"
+        }
     },
     "page2": {
         "title": "Page 2",
@@ -17,5 +24,6 @@
             "goToPage2": "Open page 2"
         },
         "infoText": "<0><0>Zero </O><1>One </1><2>Two </2><3>Three </3><4>Four</4></O>"
-    }
+    },
+    "llave":"valor"
 }
