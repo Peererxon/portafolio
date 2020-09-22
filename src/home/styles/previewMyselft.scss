@@ -1,0 +1,19 @@
+.preview{
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.myface{
+
+
+    &_img{
+        position: relative;
+        z-index: 2;
+        height: 160px;
+        bottom: 35px;
+    }
+}
