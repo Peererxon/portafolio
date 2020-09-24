@@ -1,15 +1,23 @@
+@import '../../shared/styles/vars';
 .preview{
-    height: 300px;
-    border: 1px solid red;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
     margin: 40px 0px;
+    hr{
+      width: 5px;
+      height: 1.5px;
+      border: none;
+      background: $palet1;
+      transition: width 0.3s ease-out;
+    }
+    &:hover hr{
+        width: 100%;
+    }
 }
 
 .myface{
-
-
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
     &_img{
         position: relative;
         z-index: 2;

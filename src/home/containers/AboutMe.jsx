@@ -4,10 +4,7 @@ function AboutMe( {children} ) {
     return(
 
         <div className="wrap_about">
-            <div className="about">
-                {children}
-
-            </div>
+            {children}
         </div>
     )
 };

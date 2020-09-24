@@ -1,11 +1,7 @@
 import React, {Suspense,useEffect } from 'react';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
-import './App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
 import 'materialize-css/dist/css/materialize.min.css';
-//import M from "materialize-css/dist/js/materialize.min.js";
-//const M = React.lazy( () => import ('materialize-css/dist/js/materialize.min.js') );
-//import M from 'materialize-css';
 import NotFound from '../../notfound/NotFount';
 import Preloader from '../components/Preloader_line';
 //import Header from '../Header';
