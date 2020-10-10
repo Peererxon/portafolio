@@ -5,6 +5,7 @@ function AboutMe( {children} ) {
 
         <div className="wrap_about">
             {children}
+            <br/>
         </div>
     )
 };
