@@ -1,13 +1,11 @@
-import React,{useContext} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/Header.scss";
 import Logo from './Statics/frontal-min.png';
 //import M from "materialize-css/dist/js/materialize.min.js";
 //import { BrowserRouter, Route } from "react-router-dom";
-import { contextoPadre } from "..";
 
 const Header = () => {
-  const contexto = useContext(contextoPadre);
   return(
     <>
       <header>
@@ -18,18 +16,68 @@ const Header = () => {
             </Link>
             <Link to="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
             <ul className="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass {contexto.español[0].nombre} </a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">Javascript</a></li>
-              <li><a href="mobile.html">Mobile</a></li>
+              <li>
+                <Link to={process.env.PUBLIC_URL}>
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link to={"about"}>
+                  About
+                </Link>
+              </li>
+
+              <li>
+                <Link to={"Resume"}>
+                  Resume
+                </Link>
+              </li>
+              
+              <li>
+                <Link to={"work"}>
+                  Work
+                </Link>
+              </li>
+              
+              <li>
+                <Link to={"contact"}>
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
         <ul className="sidenav" id="mobile-demo">
-          <li><a href="sass.html">Sass {contexto.español[0].nombre}</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
+          <li>
+            <Link to={process.env.PUBLIC_URL}>
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link to={"about"}>
+              About
+            </Link>
+          </li>
+
+          <li>
+            <Link to={"Resume"}>
+              Resume
+            </Link>
+          </li>
+          
+          <li>
+            <Link to={"work"}>
+              Work
+            </Link>
+          </li>
+          
+          <li>
+            <Link to={"contact"}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </header>
     </>
