@@ -31,9 +31,7 @@
         padding-bottom: 10px;
         margin-left: 15px;
         &--zoom{
-            animation: zoomInverted 2.5s ease infinite alternate;
-
-
+            animation: zoomInverted 2.5s cubic-bezier(0.99, -0.04, 1, 1) infinite alternate;
             
         }
     }
