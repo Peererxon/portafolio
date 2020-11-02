@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  portafolioApp:
+    build: . 
+    image: node:12.18.0-stretch
+    user: node:node
+    env_file: 
+      - git-vars.env
+    working_dir: /home/react/portafolio/
+    command: npm run start
+    volumes:
+      - ../app:/home/react
+    ports:
+      - 3000:3000
+    tty: true
