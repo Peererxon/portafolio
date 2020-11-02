@@ -33,7 +33,7 @@ export default class AsNavFor extends Component {
   render() {
     return (
       <div className="container">
-				<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+				<link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
 				<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
 				<style>{cssstyle}</style>
         <h2>Slider Syncing (AsNavFor)</h2>
@@ -96,8 +96,6 @@ export default class AsNavFor extends Component {
 const cssstyle = `
 .container {
   margin: 0 auto;
-  padding: 0px 40px 40px 40px;
-  width: 400px;
 }
 h3 {
     background: #5f9ea0;

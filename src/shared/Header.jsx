@@ -22,14 +22,14 @@ const Header = () => {
                 </Link>
               </li>
 
-              <li>
+{/*               <li>
                 <Link to={"about"}>
                   About
                 </Link>
-              </li>
+              </li> */}
 
               <li>
-                <Link to={"Resume"}>
+                <Link to={"resume"}>
                   Resume
                 </Link>
               </li>
@@ -40,11 +40,11 @@ const Header = () => {
                 </Link>
               </li>
               
-              <li>
+{/*               <li>
                 <Link to={"contact"}>
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
@@ -55,11 +55,11 @@ const Header = () => {
             </Link>
           </li>
 
-          <li>
+{/*           <li>
             <Link to={"about"}>
               About
             </Link>
-          </li>
+          </li> */}
 
           <li>
             <Link to={"Resume"}>
@@ -73,12 +73,12 @@ const Header = () => {
             </Link>
           </li>
           
-          <li>
+{/*           <li>
             <Link to={"contact"}>
               Contact
             </Link>
           </li>
-        </ul>
+ */}        </ul>
       </header>
     </>
   );
