@@ -19,12 +19,12 @@ function App() {
     var elem = document.querySelector(".sidenav");
     var elem2 = document.querySelector(".tooltipped");
     import ('materialize-css/dist/js/materialize.min.js').then(M => {
-      
-      var instance = M.Sidenav.init(elem, {
+      M.Sidenav.init(elem, {
           Edge: "left",
           inDuration: 250
       });
-      var tooltip= M.Tooltip.init(elem2,{
+      
+      M.Tooltip.init(elem2,{
         transitionMovement:20,
 
 
@@ -33,15 +33,15 @@ function App() {
   },[]);
   return (
     <BrowserRouter basename ={process.env.PUBLIC_URL} >
-      <Layout>
         <Suspense fallback={<Preloader/>}>
-          <Switch>
-            <Route exact path= "/" component = { Home } />
-            <Route exact path="/resume" component = { Resume } />
-            <Route exact path="*" component = { NotFound }/>
-          </Switch>
+          <Layout>
+              <Switch>
+                <Route exact path= "/" component = { Home } />
+                <Route exact path="/resume" component = { Resume } />
+                <Route exact path="*" component = { NotFound }/>
+              </Switch>
+          </Layout>
         </Suspense>
-      </Layout>
     
     </BrowserRouter>
   );
