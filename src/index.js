@@ -1,27 +1,21 @@
 import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
+//traduccion de idiomas
 import './i18n';
 
 import Portafolio from './shared/routes/App';
 
 import * as serviceWorker from './serviceWorker';
-
-export const contextoPadre = React.createContext()
-const idiomas = {
-  "español": [
-      {nombre:"anderson",apellido:"gil"},
-      {texto1:"crallon",parrafo:"eres un webon"}
-  ],
-};
-
-//export const [ idioma,setIdioma ] = useState("")
+//redux
+import { Provider } from 'react-redux';
+import  store  from './shared/redux/store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <contextoPadre.Provider value = {idiomas}>
+    <Provider store= {store}>
       <Portafolio />
-    </contextoPadre.Provider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
