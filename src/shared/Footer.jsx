@@ -25,7 +25,7 @@ const Footer = () =>(
                     className="grey-text text-lighten-4"
                     href="mailto:andersongil.dev@gmail.com?Subject=(portafolio)%20Quiero%20hacer%20un%20proyecto%20contigo"
                 >
-                    ¿Quieres que trabajemos juntos en un proyecto?<span> <img src={correoIcon} alt=""/> </span>
+                    ¿Quieres que trabajemos juntos en un proyecto?<span className ="hide-on-small-only"> <img src={correoIcon} alt=""/> </span>
                 </a>
             </div>
             
