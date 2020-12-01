@@ -1,1 +1,1 @@
-export { ToggleMenu }  from './aside/asideActions'
+export { toggleMenu }  from './aside/asideActions'

@@ -1,6 +1,6 @@
 import { TOGGLE_MENU } from "./asideTypes"
 
-export const ToggleMenu = () => {
+export const toggleMenu = () => {
     return {
         type: TOGGLE_MENU
     }
