@@ -50,7 +50,7 @@ const Header = () => {
         </nav>
         <ul className="sidenav" id="mobile-demo">
           <li>
-            <Link to={process.env.PUBLIC_URL}>
+            <Link to={process.env.PUBLIC_URL}  className = "sidenav-close">
               Home
             </Link>
           </li>
@@ -62,13 +62,13 @@ const Header = () => {
           </li> */}
 
           <li>
-            <Link to={"Resume"}>
+            <Link to={"Resume"}  className = "sidenav-close">
               Resume
             </Link>
           </li>
           
           <li>
-            <Link to={"work"}>
+            <Link to={"work"}  className = "sidenav-close">
               Work
             </Link>
           </li>
