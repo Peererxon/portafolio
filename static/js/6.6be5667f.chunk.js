@@ -1,0 +1,2 @@
+(this.webpackJsonpportafolio=this.webpackJsonpportafolio||[]).push([[6],{93:function(e,a,t){"use strict";t.r(a);var n=t(0),s=t.n(n);a.default=function(){return s.a.createElement("div",{className:"Resume"},s.a.createElement("div",{className:"cardCenter"}),s.a.createElement("h1",null,"false"))}}}]);
+//# sourceMappingURL=6.6be5667f.chunk.js.map
