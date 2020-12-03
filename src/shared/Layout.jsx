@@ -31,7 +31,6 @@ const Layout = ( {children} ) => {
       return (
         <>
             <Header/>
-            <button type="button" name="" id="" className="btn btn btn-lg btn-block" onClick= { ()=> dispatch( toggleMenu() ) } >adasd</button>
             {children}
             <Footer/>
         </>
