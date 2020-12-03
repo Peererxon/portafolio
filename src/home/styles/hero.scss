@@ -1,0 +1,32 @@
+@import '../../shared/styles/_vars.scss';
+//gradiente:linear-gradient(141deg, rgb(17, 19, 23) 10%, rgb(41 86 169) 51%, rgb(17, 19, 23) 75%)
+.backgraundHero{
+    //background-position: center center;
+    //background-repeat: no-repeat;
+    background-size: cover!important;
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    &__welcome{
+        width: 100%;
+        text-align: center;
+    }
+
+    &__descript {
+        font-size: $text-s;
+    }
+}
+
+.title{
+    font-size: $titleSize-s;
+    font-weight: bold;
+    color: #4078e8;
+}
+
+@media only screen and (min-width:$PhonesLandscape){
+
+}

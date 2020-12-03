@@ -1,0 +1,29 @@
+/**
+* HEADER
+*/
+
+.navbar.navbar-inverse{
+    animation: 1.6s ease 1 ease-out forwards;
+    
+}
+
+@keyframes navbarON{
+    0%{
+        transform: translate(0,-25px) translateZ(50px);
+    }
+    50%{
+        transform: translate(0,-5px) translateZ(20px);
+    }
+    60%{
+        transform: translateZ(-2.5px);
+    }
+    70%{
+        transform: translate(0,0px) translateZ(-1.5px);
+    }
+    100%{
+        transform: translate(0,0) translateZ(0px);
+
+    }
+}
+
+//HEADER

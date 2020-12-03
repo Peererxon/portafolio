@@ -1,0 +1,27 @@
+@import '../../shared/styles/vars';
+.preview{
+    margin: 40px 0px;
+    hr{
+      width: 5px;
+      height: 1.5px;
+      border: none;
+      background: $palet1;
+      transition: width 0.3s ease-out;
+    }
+    &:hover hr{
+        width: 100%;
+    }
+}
+
+.myface{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    &_img{
+        position: relative;
+        z-index: 2;
+        height: 160px;
+        bottom: 35px;
+    }
+}
