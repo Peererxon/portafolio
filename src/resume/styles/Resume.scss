@@ -1,0 +1,8 @@
+@import '../../shared/styles/vars';
+
+.Resume{
+    margin: 20px auto;
+    background-color: $resume;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px 0px;
+    box-sizing: border-box;
+}

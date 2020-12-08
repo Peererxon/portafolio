@@ -1,0 +1,14 @@
+@import '../../shared/styles/vars';
+
+.Heading{
+    &__title{
+        text-align: center;
+        font-size:$titleSize-s;
+    }
+
+    &__p{
+        text-align: justify;
+        font-size: $paragraph-s;
+        color: $palet2;
+    }
+}

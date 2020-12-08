@@ -9,7 +9,7 @@ import Preloader from '../components/Preloader_line';
 
 //Lazy components
 const Layout = React.lazy( () => import ('../Layout') );
-const Resume = React.lazy( () => import ('../../resume/Resume') );
+const Resume = React.lazy( () => import ('../../resume') );
 const Home = React.lazy( () => import ('../../home/Home') ); //usando code splitting con rutas
 
 //EndLazy components
