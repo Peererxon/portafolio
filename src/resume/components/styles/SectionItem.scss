@@ -1,0 +1,17 @@
+@import '../../../shared/styles/vars';
+
+.sectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+    border-radius: $radius-cards;
+    min-height: 55px;
+
+    &__h2{
+        margin: 0px;
+        font-size: 30px;
+        color: white;
+    }
+}
