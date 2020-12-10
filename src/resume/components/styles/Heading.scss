@@ -1,0 +1,31 @@
+@import '../../shared/styles/vars';
+
+.Heading{
+    padding-top: 30px;
+    &__p{
+        text-align: center;
+        font-size: $paragraph-s;
+        color: $palet2;
+        padding: 3px 16px;
+    }
+}
+
+.encabezado{
+    
+    margin: auto;
+    width: 90%;
+    border-radius: $radius-cards;
+    background-color: $palet2;
+    box-shadow: 0px 5px 3px -1px rgba(0,0,0,0.75);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title{
+        text-align: center;
+        font-size:$titleSize-s;
+        color: white;
+        margin: 0px;
+    }
+}
