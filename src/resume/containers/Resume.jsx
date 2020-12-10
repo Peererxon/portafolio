@@ -1,12 +1,18 @@
 import React from 'react';
 import { Heading } from '../components/Heading';
-import '../styles/Resume.scss';
+import './styles/Resume.scss';
+import { Sections } from './Sections';
+import { SectionItem } from '../components/SectionItem';
 
-const Resume = ( {children} ) => {
+const Resume = () => {
     return (
         
         <div className = "Resume">
-            <Heading />          
+            <Heading />
+            <Sections >
+                <SectionItem title="skills" />
+                <SectionItem title="experience"/>
+            </Sections>  
         </div>
         
     )
