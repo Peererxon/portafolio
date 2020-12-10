@@ -1,7 +1,11 @@
 @import '../../shared/styles/vars';
+@import '../../shared/styles/mixins';
 
 .Resume{
-    margin: 20px auto;
+    
+    @include alinearAlLogo;
+    margin-top: 20px;
+    border-radius: $radius-cards;
     background-color: $resume;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px 0px;
     box-sizing: border-box;

@@ -1,0 +1,6 @@
+@mixin alinearAlLogo{
+    //los 36px son una medida fija del menu aburguesa con su padding en Mobile
+    width: calc(100% - 36px);
+    margin: 0px 0px 0px 18px;
+     
+}
