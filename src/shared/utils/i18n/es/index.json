@@ -15,13 +15,13 @@
         "title": "Resumen de Anderson",
         "aspiracion": "Mejorar mis habilidades de Desarrollo a través de la experiencia laboral en equipo.",
         "secciones":{
-            "titulos": "Habilidades,Estudios Profesionales,Experiencia Laboral",
-            "habilidades": "React,Redux,Angular,Ionic,Git,Sass,Html,Css,Javascript,Docker,Webpack",
-            "estudios": {
-                "titulos":"Carrera técnica programador FrontEnd (paquete de cursos),Escuela de Javascript(paquete de cursos),Fundamentos de Ingenieria de Software",
-                "lugares":"Academia Cadif1 (2018-2019),Platzi plataforma de educacion,Platzi plataforma de educacion ",
-                "contenidos":"Cursos vistos: html, css, preprocesadores, angular ,JavaScript, typescript, programación orientada a objetos,  ionic, lógica de programación, jQuery, Bootstrap. Cursos vistos: Reactjs,React router ,Webpack básico, JavaScript, git, curso de frontend developer, Prework: buenas prácticas y entorno de desarrollo."
-            }
+            "titulos": "Proyectos más destacados,Estudios Profesionales,Habilidades,Experiencia Laboral",
+            "habilidades": "React,Redux,Angular,Ionic,Git,Sass,Html,Css,Javascript,Docker,Webpack"
+        },
+        "estudios": {
+            "titulos":"Carrera técnica programador FrontEnd (paquete de cursos),Escuela de Javascript(paquete de cursos),Fundamentos de Ingenieria de Software",
+            "lugares":"Academia Cadif1 (2018-2019),Platzi plataforma de educacion,Platzi plataforma de educacion ",
+            "contenidos":"Cursos vistos: html, css, preprocesadores, angular ,JavaScript, typescript, programación orientada a objetos,  ionic, lógica de programación, jQuery, Bootstrap. Cursos vistos: Reactjs,React router ,Webpack básico, JavaScript, git, curso de frontend developer, Prework: buenas prácticas y entorno de desarrollo."
         },
         "experiencia": "blablabla",
         "educacion":"blablabl"

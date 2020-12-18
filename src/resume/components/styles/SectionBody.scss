@@ -1,0 +1,10 @@
+.sectionbody{
+    min-height: 100px;
+    width: 95%;
+    margin: 0px auto;
+}
+
+.sectionbody ul div.list:first-child{
+    font-weight: bold;
+    list-style-type: disc;
+}
