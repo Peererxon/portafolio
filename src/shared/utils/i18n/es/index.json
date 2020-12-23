@@ -1,6 +1,6 @@
 {
     "home": {
-        "hello": "Hola, soy",
+        "hello": "Bienvenido, soy",
         "roll":"Desarrollador web",
         "quienSoy": "Soy un entusiasta Desarrollador FrontEnd",
         "resumen":  "Amante de la tecnología🤖, la industria 4.0 🏭 y la innovación en la era digital.",
@@ -15,16 +15,24 @@
         "title": "Resumen de Anderson",
         "aspiracion": "Mejorar mis habilidades de Desarrollo a través de la experiencia laboral en equipo.",
         "secciones":{
-            "titulos": "Proyectos más destacados,Estudios Profesionales,Habilidades,Experiencia Laboral",
+            "titulos": "Experiencia Laboral,Estudios Profesionales,Habilidades,Proyectos más destacados",
             "habilidades": "React,Redux,Angular,Ionic,Git,Sass,Html,Css,Javascript,Docker,Webpack"
         },
         "estudios": {
             "titulos":"Carrera técnica programador FrontEnd (paquete de cursos),Escuela de Javascript(paquete de cursos),Fundamentos de Ingenieria de Software",
-            "lugares":"Academia Cadif1 (2018-2019),Platzi plataforma de educacion,Platzi plataforma de educacion ",
-            "contenidos":"Cursos vistos: html, css, preprocesadores, angular ,JavaScript, typescript, programación orientada a objetos,  ionic, lógica de programación, jQuery, Bootstrap. Cursos vistos: Reactjs,React router ,Webpack básico, JavaScript, git, curso de frontend developer, Prework: buenas prácticas y entorno de desarrollo."
+            "contenidos":"Cursos vistos: html, css, preprocesadores, angular ,JavaScript, typescript, programación orientada a objetos,  ionic, lógica de programación, jQuery, Bootstrap. Cursos vistos: Reactjs,React router ,Webpack básico, JavaScript, git, curso de frontend developer, Prework: buenas prácticas y entorno de desarrollo.",
+            "platziEscuelaJS": "Escuela de Javascript(paquete de cursos). Platzi plataforma de educacion (2019-2020). Cursos vistos: Reactjs,React router ,Webpack básico, JavaScript, git, curso de frontend developer, Prework: buenas prácticas y entorno de desarrollo",
+            "cadif1": "Carrera técnica programador FrontEnd (paquete de cursos). Academia Cadif1 (2018-2019). Cursos vistos: html, css, preprocesadores, angular ,JavaScript, typescript, programación orientada a objetos,  ionic, lógica de programación, jQuery, Bootstrap",
+            "platziArquitectura": "Fundamentos de Ingenieria de Software. Platzi plataforma de educacion (2019)"
         },
-        "experiencia": "blablabla",
-        "educacion":"blablabl"
+        "proyectos" : {
+          "1": "Aplicación Móvil Hibrida. Cliente: Founduss empresa de servicios.",
+          "2": "Aplicación Web. Cliente: Ruby empresa de Software."
+        },
+        "experiencia": {
+            "Binaural": "Desarrollador web. Binaural empresa de software (2018-2019). Periodo de pasantías en el puesto de desarrollador FrontEnd, mientras me adaptaba a las metodologías de desarrollo agiles y con el equipo de desarrollo  (QA, diseñador, DevOps, desarrolladores).",
+            "Founduss": "Desarrollo de aplicacion movil hibrida. Founduss empresa de servicios (2019-2020). Se realizó una aplicación realizada con ionic, utilizando el almacenamiento nativo del dispositivo, la cámara y otras funcionalidades. Planificación y gestión de un pequeño equipo de desarrollo, para la integración de las mejores prácticas en software."
+        }
     },
     "work": {
         "currentLanguage": "The current language is ",

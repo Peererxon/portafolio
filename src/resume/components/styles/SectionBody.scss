@@ -8,3 +8,9 @@
     font-weight: bold;
     list-style-type: disc;
 }
+
+@media (min-width:601px){
+    .container{
+        width: 95%;
+    }
+}
