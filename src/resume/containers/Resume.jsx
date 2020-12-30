@@ -7,6 +7,7 @@ import { Sections } from './Sections';
 import { SectionTitle } from '../components/SectionTitle';
 import SectionBody from '../components/SectionBody';
 import SectionBodyList from '../components/SectionBodyList';
+import SkillsContainer from './SkillsContainer';
 
 const Resume = () => {
     /**
@@ -89,6 +90,7 @@ const Resume = () => {
                     
                 )}
             </Sections>
+            <SkillsContainer />
         </div>
         
         

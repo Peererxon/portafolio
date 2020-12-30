@@ -1,0 +1,18 @@
+@import '../../../shared/styles/vars';
+.skill{
+    margin-top: 10px;
+    text-align: center;
+    min-height: 115px!important; //is for the col of matarialice
+    &__img{
+        width: 50px;
+        height: 50px;
+    }
+    &__p{
+        display: none;
+        color: $palet2;
+    }
+
+    &:hover &__p{
+        display: block;
+    }
+}

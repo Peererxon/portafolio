@@ -32,7 +32,8 @@
         "experiencia": {
             "Binaural": "Desarrollador web. Binaural empresa de software (2018-2019). Periodo de pasantías en el puesto de desarrollador FrontEnd, mientras me adaptaba a las metodologías de desarrollo agiles y con el equipo de desarrollo  (QA, diseñador, DevOps, desarrolladores).",
             "Founduss": "Desarrollo de aplicacion movil hibrida. Founduss empresa de servicios (2019-2020). Se realizó una aplicación realizada con ionic, utilizando el almacenamiento nativo del dispositivo, la cámara y otras funcionalidades. Planificación y gestión de un pequeño equipo de desarrollo, para la integración de las mejores prácticas en software."
-        }
+        },
+        "skills": "React,javascript"
     },
     "work": {
         "currentLanguage": "The current language is ",
