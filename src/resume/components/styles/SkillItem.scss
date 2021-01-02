@@ -2,32 +2,38 @@
 .skill{
     margin-top: 10px;
     text-align: center;
-    perspective: 100px;
-    margin-bottom: 15px;
-
-    //height: 115px ; //is for the col of matarialice
-    &__img{
-        position: relative;
-        z-index: 3;
-        filter: grayscale(100%);
-        background-color: $resume;
-        
-    }
+    margin-bottom: 40px;
     &__p{
-        //margin: 0px;
-        position: relative;
-        z-index: 1;
-        transform: translate3d(0,-50px,-40px);
         color: $palet2;
-        transition: transform 1s;
     }
 
-    &:hover &__p {
-        transform: translate3d(0,0px,0px);
-    }
+}
 
-    &:hover &__img {
-        transition: filter 2s linear;
-        filter: grayscale(0%);
+@media only screen and (min-width:601px){
+    .skill{
+        perspective: 100px;
+    
+        &__img{
+            position: relative;
+            z-index: 3;
+            filter: grayscale(100%);
+            background-color: $resume;
+            
+        }
+        &__p{
+            position: relative;
+            z-index: 1;
+            transform: translate3d(0,-50px,-40px);
+            transition: transform 1s;
+        }
+    
+        &:hover &__p {
+            transform: translate3d(0,0px,0px);
+        }
+    
+        &:hover &__img {
+            transition: filter 2s linear;
+            filter: grayscale(0%);
+        }
     }
 }
