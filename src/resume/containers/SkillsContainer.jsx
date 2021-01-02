@@ -3,9 +3,19 @@ import { useTranslation } from 'react-i18next';
 import './styles/SkillsContainer.scss';
 import SkillItem from '../components/SkillItem';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import
+{
+  faReact,
+  faAngular,
+  faAndroid,
+  faJs,
+  faBootstrap,
+  faDocker,
+  faSass,
+  faHtml5,
+  faCss3Alt
+} from '@fortawesome/free-brands-svg-icons';
 
 const SkillsContainer = () => {
   const { t } = useTranslation();
@@ -20,7 +30,6 @@ const SkillsContainer = () => {
       </div>
       <div className="skills-wrap">
         <div className="row">
-          <FontAwesomeIcon icon={faReact} size="4x" color="blue" />
 
           {
             skills.map(
@@ -32,18 +41,61 @@ const SkillsContainer = () => {
                 console.log( skill )
                 switch ( skill.toLocaleLowerCase() ) {
                   case "react":
-                    svgFontAwesome = "faReact"
+                    svgFontAwesome = faReact
                     svgColor = "#61dbfb"
-                    const faReact =  require( '@fortawesome/free-brands-svg-icons' ).faReact
                     break;
 
                   case "javascript":
-                    svgFontAwesome = "faJavascript"
+                    svgFontAwesome = faJs
+                    svgColor = "#f0db4f"
                     break;
+
+                  case "docker":
+                    svgFontAwesome = faDocker;
+                    svgColor = "#0DB7ED"
+                    break;
+
+                  case "git":
+                    svgFontAwesome = faCodeBranch;
+                    svgColor = "#F1502F"
+                    break;
+
+                  case "boostrap":
+                    svgFontAwesome = faBootstrap;
+                    svgColor = "#563d7c"
+                    break;
+
+                  case "angular":
+                    svgFontAwesome = faAngular
+                    svgColor = "#a6120d"
+                    break;
+
+                  case "html":
+                    svgFontAwesome = faHtml5
+                    svgColor = "#f06529"
+                    break;
+
+                  case "css":
+                    svgFontAwesome = faCss3Alt
+                    svgColor = "#2965f1"
+                    break;
+
+                  case "sass":
+                    svgFontAwesome = faSass
+                    svgColor = "#cc6699"
+                    break;
+
+                  case "android":
+                    svgFontAwesome = faAndroid
+                    svgColor = "#32DE84"
+                    skill = "Aprendiendo";
+                    break;
+
                   default:
                     break;
                 }
-                return <SkillItem name={skill} key = {index} awesomeIconName={svgFontAwesome} svgColor= {svgColor} />
+
+                return <SkillItem name={skill} key = {index} awesomeIcon={svgFontAwesome} svgColor= {svgColor} />
               }
             )
           }
