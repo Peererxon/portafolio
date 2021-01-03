@@ -1,22 +1,22 @@
-import React,{ memo } from 'react'
+import React, { memo } from 'react'
 import './styles/SectionBody.scss';
 
-const SectionBodyList = memo( ( { elementos } ) => 
-    (
-        
-        <div className="sectionbody">
-            <ul>
-                { 
-                    elementos.map( (elemento,index) => 
-                        (
-                            <li key= {index}>{elemento}</li>
-                        )
-                    ) 
-                }
-                
-            </ul>
-        </div>
-    )
+const SectionBodyList = memo( ( { elementos } ) =>
+  (
+
+    <div className="sectionbody">
+      <ul>
+        {
+          elementos.map( ( elemento, index ) =>
+            (
+              <li key= {index}>{elemento}</li>
+            )
+          )
+        }
+
+      </ul>
+    </div>
+  )
 )
 
-export default SectionBodyList
+export default SectionBodyList;
