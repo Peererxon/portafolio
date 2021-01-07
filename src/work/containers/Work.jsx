@@ -1,15 +1,61 @@
 import React from 'react'
-import { ProjectItem } from '../components/ProjectItem';
+import { ProjectCard } from '../components/ProjectCard';
 import Projects from './Projects';
+import {
+  faReact,
+  faAngular,
+  faAndroid,
+  faJs,
+  faBootstrap,
+  faDocker,
+  faSass,
+  faHtml5,
+  faCss3Alt
+} from '@fortawesome/free-brands-svg-icons';
 
+import img from '../../shared/Statics/frontal-min.png';
+const proyectos = [
+  {
+    titulo: "prueba de titulos",
+    descripcion: "descripcionPrueba",
+    imagenPrincipal: img
+  },
+  {
+    titulo: "prueba de titulos2",
+    descripcion: "descripcionPrueba2",
+    imagenPrincipal: img
+  },
+  {
+    titulo: "prueba de titulos3",
+    descripcion: "descripcionPrueba3",
+    imagenPrincipal: img
+  },
+]
+//debugger
 // eslint-disable-next-line brace-style
 const Work = () => {
   return (
     <Projects>
-      <ProjectItem title={"holis"} />
-      <ProjectItem title={"holis"} />
-      <ProjectItem title={"holis"} />
-      <ProjectItem title={"holis"} />
+      {
+        proyectos.map(
+          ( { titulo, descripcion, imagenPrincipal }, index ) =>
+          {
+            return (
+              <ProjectCard
+                key={index}
+                title={titulo}
+                description={descripcion}
+                imagen={<img src={imagenPrincipal} alt="imagen presentacional de proyecto realizado" title="click para ver mas sobre el proyecto" />} 
+              />
+
+            )
+          }
+        )
+      }
+      <ProjectCard title={"holis"} imagen={<img src={img} alt="imagen presentacional de proyecto realizado" title="click para ver mas sobre el proyecto" />} />
+{/*       <ProjectCard title={"holis"} />
+      <ProjectCard title={"holis"} />
+      <ProjectCard title={"holis"} /> */}
     </Projects>
   )
 }
