@@ -3,6 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './App.scss';
 import 'materialize-css/dist/css/materialize.min.css';
 import Preloader from '../components/Preloader_line';
+import Modal from 'react-redux-modal-flex';
+import store from '../redux/store';
+
 //import Header from '../Header';
 //import Layout from '../Layout';
 
@@ -33,6 +36,7 @@ function App() {
           </Suspense>
         </Layout>
       </Suspense>
+      <Modal store= {store}/>
     </BrowserRouter>
   );
 }

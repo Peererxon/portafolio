@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectCard } from '../components/ProjectCard';
+import ProjectCard  from '../components/ProjectCard';
 import Projects from './Projects';
 import {
   faReact,
@@ -41,21 +41,30 @@ const Work = () => {
           ( { titulo, descripcion, imagenPrincipal }, index ) =>
           {
             return (
-              <ProjectCard
-                key={index}
-                title={titulo}
-                description={descripcion}
-                imagen={<img src={imagenPrincipal} alt="imagen presentacional de proyecto realizado" title="click para ver mas sobre el proyecto" />} 
-              />
+              <div key={index}>
 
+                <ProjectCard
+                  key={index}
+                  title={titulo}
+                  description={descripcion}
+                  imagen={<img src={imagenPrincipal} alt="imagen presentacional de proyecto realizado" title="click para ver mas sobre el proyecto" />}
+                />
+
+                <div id={"proyecto" + index} className="modal">
+                  <div className="modal-content">
+                    <h4>Modal Header</h4>
+                    <p>A bunch of text</p>
+                  </div>
+                  <div className="modal-footer">
+                    <a href="#!" className="modal-close waves-effect waves-green btn-flat">Agree</a>
+                  </div>
+                </div>
+              </div>
             )
           }
         )
       }
-      <ProjectCard title={"holis"} imagen={<img src={img} alt="imagen presentacional de proyecto realizado" title="click para ver mas sobre el proyecto" />} />
-{/*       <ProjectCard title={"holis"} />
-      <ProjectCard title={"holis"} />
-      <ProjectCard title={"holis"} /> */}
+      {/* <ProjectCard title={"holis"} imagen={<img src={img} alt="imagen presentacional de proyecto realizado" title="click para ver mas sobre el proyecto" />} /> */}
     </Projects>
   )
 }
