@@ -49,16 +49,6 @@ const Work = () => {
                   description={descripcion}
                   imagen={<img src={imagenPrincipal} alt="imagen presentacional de proyecto realizado" title="click para ver mas sobre el proyecto" />}
                 />
-
-                <div id={"proyecto" + index} className="modal">
-                  <div className="modal-content">
-                    <h4>Modal Header</h4>
-                    <p>A bunch of text</p>
-                  </div>
-                  <div className="modal-footer">
-                    <a href="#!" className="modal-close waves-effect waves-green btn-flat">Agree</a>
-                  </div>
-                </div>
               </div>
             )
           }

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { useSelector, useDispatch } from 'react-redux'
 
 import { actions as ModalActions } from 'react-redux-modal-flex';
-import ModalProject from '../../shared/components/ProjectsModal';
+import ModalProject from './ProjectsModal';
 const {toggleModal, modifyOkModal} = ModalActions;
 
 
@@ -42,7 +42,7 @@ const ProjectCard = ( { title, imagen, description } ) => {
       <div className="col s12 m4 l2">
         <div className="card">
 
-          <div className="card-image" onClick={() => handleClick( <ModalProject />, "hola" ) }>
+          <div className="card-image" onClick={() => handleClick( <ModalProject />, "holasss" ) }>
             {/* Definitely this is an awful bad practice, i did it becouse i don´t have a backend for now that send me a decently images url */}
             {imagen}
             <span className="card-title">
