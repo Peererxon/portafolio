@@ -13,8 +13,9 @@ import {
   faCss3Alt
 } from '@fortawesome/free-brands-svg-icons';
 
-import img from '../../shared/Statics/frontal-min.png';
-const proyectos = [
+import img from '../../shared/Statics/hero_test.svg';
+import { useTranslation } from 'react-i18next';
+/* const proyectos = [
   {
     titulo: "prueba de titulos",
     descripcion: "descripcionPrueba",
@@ -30,10 +31,38 @@ const proyectos = [
     descripcion: "descripcionPrueba3",
     imagenPrincipal: img
   },
-]
+] */
 //debugger
 // eslint-disable-next-line brace-style
 const Work = () => {
+  const { t } = useTranslation();
+  const proyectos = [
+    {
+      cliente: t( "modalProyectos:1:cliente" ),
+      tipo: t( "modalProyectos:1:tipo" ),
+      modalidad: t( "modalProyectos:1:modalidad" ),
+      descripcion: t( "modalProyectos:1:descripcion" )
+    },
+    {
+      titulo: t( "modalProyectos:2:titulo" ),
+      cliente: t( "modalProyectos:2:cliente" ),
+      tipo: t( "modalProyectos:2:tipo" ),
+      modalidad: t( "modalProyectos:2:modalidad" ),
+      descripcion: t( "modalProyectos:2:descripcion" )
+    },
+    {
+      cliente: t( "modalProyectos:3:cliente" ),
+      tipo: t( "modalProyectos:3:tipo" ),
+      modalidad: t( "modalProyectos:3:modalidad" ),
+      descripcion: t( "modalProyectos:3:descripcion" )
+    },
+    {
+      cliente: t( "modalProyectos:4:cliente" ),
+      tipo: t( "modalProyectos:4:tipo" ),
+      modalidad: t( "modalProyectos:4:modalidad" ),
+      descripcion: t( "modalProyectos:4:descripcion" )
+    }
+  ]
   return (
     <Projects>
       {
