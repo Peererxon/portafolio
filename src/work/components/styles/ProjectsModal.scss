@@ -1,16 +1,35 @@
+@import '../../../shared/styles/vars';
 .projectModal {
     width: 90vw;
-    //display: flex;
-
-    &__carrousel{
-        width: 100%;
-    }
+    background-color: $palet1;
 
     &__body{
-        
+        //margin-top: calc(2.3733333333rem + 1.424rem + 54px);
+        // the size of the h2 and theres margins
+        text-align: center;
     }
 
     &__p{
         color: red;
     }
+}
+
+.carrousel{
+    width: 100%;
+
+    &__img{
+        max-height: 350px;
+    }
+}
+
+.projectModal .slick-prev, .slick-next{
+    z-index: 9;
+}
+
+.projectModal .slick-next {
+    right: 0px;
+}
+
+.projectModal .slick-prev {
+    left: 0px;
 }
