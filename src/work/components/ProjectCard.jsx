@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import './styles/ProjectCard.scss';
-import { connect } from 'react-redux';
 import { useSelector, useDispatch } from 'react-redux'
 
 import { actions as ModalActions } from 'react-redux-modal-flex';
@@ -12,7 +11,6 @@ const {toggleModal, modifyOkModal} = ModalActions;
 // eslint-disable-next-line brace-style
 const ProjectCard = ( { title, imagen, description } ) => {
   //saca información desde el store
-  const modalState = useSelector( state => state.modal )
   //usa un dispatch del store
   const dispatch = useDispatch()
 
@@ -30,19 +28,18 @@ const ProjectCard = ( { title, imagen, description } ) => {
       ), [dispatch]
     //estaba asi en la doc, es para prevenir renders innecesarios
   )
-
   const handleClick = ( component, text, action ) =>
   {
-    console.log(component)
+    console.log( "handleClick" )
     dispatch( toggleModal( component, text, action ) )
   }
 
   return (
     <div className="project-item">
       <div className="col s12 m4 l2">
-        <div className="card">
+        <div className="card hoverable">
 
-          <div className="card-image" onClick={() => handleClick( <ModalProject />, "holasss" ) }>
+          <div className="card-image" onClick={() => handleClick( <ModalProject title={title} modalidad="remota" cliente="mimami"/>, "holasss" ) }>
             {/* Definitely this is an awful bad practice, i did it becouse i don´t have a backend for now that send me a decently images url */}
             {imagen}
             <span className="card-title">
