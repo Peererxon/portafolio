@@ -10,7 +10,7 @@ const ProjectCard = ( { title, imagen, description, handleClick } ) => {
       <div className="col s12 m4 l2">
         <div className="card hoverable">
 
-          <div className="card-image" onClick={() => handleClick( title )}>
+          <div className="card-image" onClick={() => handleClick( title, description )}>
             {/* Definitely this is an awful bad practice, i did it becouse i don´t have a backend for now that send me a decently images url */}
             {imagen}
             <span className="card-title">
