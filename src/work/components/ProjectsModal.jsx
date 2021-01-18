@@ -1,10 +1,11 @@
-import React, { memo, useEffect } from 'react'
+import React, { memo } from 'react'
 import './styles/ProjectsModal.scss'
 import Slider from "react-slick";
 import frontMe from '../../shared/Statics/frontal-min.png'
+import PropTypes from 'prop-types';
 // eslint-disable-next-line brace-style
 const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente } ) => {
-  console.log("renderizando el modal")
+  console.log("renderizando el modal: " + title, images, tipoDeDesarrollo, modalidad, cliente)
   const settings = {
     dots: false,
     lazyLoad: true,
@@ -14,27 +15,7 @@ const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente } 
     slidesToScroll: 1,
     initialSlide: 2
   }
-  // eslint-disable-next-line brace-style
-/*   useEffect( () => {
-    //materializeEffect
-     const elem = document.querySelector('.carousel');
-    const instance = M.Carousel.init( elem, { fullWidth:true } );
-    const instanceCarrousel = M.Carousel.getInstance(elem);
-    // eslint-disable-next-line brace-style
-    var elems = document.querySelector('.carousel');
-    var instances = M.Carousel.init(elems, {fullWidth:true,indicators:true});
-    return () => {
-      //destruyendo instancia para evitar problemas de caché
-      //instanceCarrousel.destroy()
-    }
-  }, [] ) */
 
-  useEffect( () => {
-
-    return () => {
-
-    }
-  }, [])
   return (
     <div className="projectModal row">
       <div className="carrousel col s12 m5">
@@ -52,8 +33,12 @@ const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente } 
       </div>
       <div className= "col s12 m7 projectModal__body">
         <p className= "projectModal__p"> <strong>Categoria:</strong> {tipoDeDesarrollo} </p>
-        <p className= "projectModal__p"> <strong>cliente:</strong> {cliente} </p>
-        <p className= "projectModal__p"> <strong>Modalida:</strong> {modalidad} </p>
+        { cliente ?
+          <p className= "projectModal__p"> <strong>cliente:</strong> {cliente} </p> : null
+        }
+        {modalidad ?
+          <p className= "projectModal__p"> <strong>Modalida:</strong> {modalidad} </p> : null 
+        }
         <a className= "btn" >
           view demo
         </a>
@@ -63,4 +48,11 @@ const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente } 
   )
 }
 
+ProjectsModal.propTypes = {
+  title: PropTypes.string.isRequired,
+  images: PropTypes.array,
+  modalidad: PropTypes.oneOf( ["Remoto", "Presencial"] ).isRequired,
+  cliente: PropTypes.string,
+  tipoDeDesarrollo: PropTypes.string.isRequired
+}
 export default memo( ProjectsModal );

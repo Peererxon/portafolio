@@ -1,7 +1,7 @@
 @import '../../../shared/styles/vars';
 .projectModal {
     width: 90vw;
-    background-color: $palet1;
+    background-color: $resume;
 
     &__body{
         //margin-top: calc(2.3733333333rem + 1.424rem + 54px);
@@ -10,7 +10,7 @@
     }
 
     &__p{
-        color: red;
+        color: black;
     }
 }
 
@@ -19,10 +19,11 @@
 
     &__img{
         max-height: 350px;
+        width: 100%;
     }
 }
 
-.projectModal .slick-prev, .slick-next{
+.projectModal .slick-prev, .projectModal .slick-next{
     z-index: 9;
 }
 

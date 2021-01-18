@@ -56,8 +56,9 @@
             "descripcion": "bla bla bla"
         },
         "4":{
-            "tipo":"Aplicación móvil Hibrida",
-            "cliente": "Proyecto personal",
+            "tipo":"Aplicación móvil Hibrida",            
+            "cliente": "CADIF1",
+            "titulo": "Tienda Virtual,proyecto final académico",
             "modalidad": "Remoto",
             "descripcion": "bla bla bla"
         }
