@@ -17,6 +17,7 @@ import
   faCss3Alt
 } from '@fortawesome/free-brands-svg-icons';
 
+// eslint-disable-next-line brace-style
 const SkillsContainer = () => {
   const { t } = useTranslation();
   const skills = t( "resume:skills" ).split( ',' );
@@ -33,13 +34,16 @@ const SkillsContainer = () => {
 
           {
             skills.map(
-              ( skill, index )=> {
+              ( skill, index )=>
+              {
+
                 // eslint-disable-next-line no-unused-vars
                 let svgFontAwesome;
                 // eslint-disable-next-line no-unused-vars
                 let svgColor;
                 console.log( skill )
-                switch ( skill.toLocaleLowerCase() ) {
+                switch ( skill.toLocaleLowerCase() )
+                {
                   case "react":
                     svgFontAwesome = faReact
                     svgColor = "#61dbfb"

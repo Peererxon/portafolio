@@ -4,3 +4,17 @@
     margin: 0px 0px 0px 18px;
      
 }
+
+@mixin ellipsis-multiline($lineas-a-mostrar:1){
+	display: block;
+	display: -webkit-box;
+  -webkit-line-clamp: $lineas-a-mostrar;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+	//this is less cross browser compatible than one-line's ellipsis
+}
+@mixin ellipsis-one-line {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
