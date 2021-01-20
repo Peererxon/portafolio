@@ -22,6 +22,9 @@ import ionicCadif1carrousel4 from '../../shared/Statics/trabajos/Ionic_proyectoC
 import ionicCadif1carrousel5 from '../../shared/Statics/trabajos/Ionic_proyectoCAD_5_Marcado.png'
 import ionicCadif1carrousel6 from '../../shared/Statics/trabajos/Ionic_proyectoCAD_6_Marcado.png'
 
+// assets foundussMovil proyect
+import imagenPFoundussApp from '../../shared/Statics/trabajos/proyecto_FoundussApp.jpg'
+
 import { useTranslation } from 'react-i18next';
 
 import { actions as ModalActions } from 'react-redux-modal-flex';
@@ -31,41 +34,34 @@ import { useDispatch } from 'react-redux';
 // eslint-disable-next-line brace-style
 const Work = () => {
   const { t } = useTranslation();
-  const carrouselIonicCadif1 =
-    [
-      imagenPIonicCadif1,
-      ionicCadif1carrousel1,
-      ionicCadif1carrousel2,
-      ionicCadif1carrousel3,
-      ionicCadif1carrousel4,
-      ionicCadif1carrousel5,
-      ionicCadif1carrousel6
-    ]
+  //the order of this objects are inside of the index.json of the i18 library
   const proyectos = [
     {
+      title: t( "modalProyectos:1:titulo" ),
       cliente: t( "modalProyectos:1:cliente" ),
-      tipo: t( "modalProyectos:1:tipo" ),
+      tipoDeDesarrollo: t( "modalProyectos:1:tipo" ),
       modalidad: t( "modalProyectos:1:modalidad" ),
-      descripcion: t( "modalProyectos:1:descripcion" )
+      descripcion: t( "modalProyectos:1:descripcion" ),
+      imagenPrincipal: imagenPFoundussApp
     },
     {
-      titulo: t( "modalProyectos:2:titulo" ),
+      title: t( "modalProyectos:2:titulo" ),
       cliente: t( "modalProyectos:2:cliente" ),
-      tipo: t( "modalProyectos:2:tipo" ),
+      tipoDeDesarrollo: t( "modalProyectos:2:tipo" ),
       modalidad: t( "modalProyectos:2:modalidad" ),
       descripcion: t( "modalProyectos:2:descripcion" )
-    },
+    }, //caprofula
     {
       cliente: t( "modalProyectos:3:cliente" ),
-      tipo: t( "modalProyectos:3:tipo" ),
+      tipoDeDesarrollo: t( "modalProyectos:3:tipo" ),
       modalidad: t( "modalProyectos:3:modalidad" ),
       descripcion: t( "modalProyectos:3:descripcion" )
     },
     {
       cliente: t( "modalProyectos:4:cliente" ),
-      tipo: t( "modalProyectos:4:tipo" ),
+      tipoDeDesarrollo: t( "modalProyectos:4:tipo" ),
       modalidad: t( "modalProyectos:4:modalidad" ),
-      titulo: t( "modalProyectos:4:titulo" ),
+      title: t( "modalProyectos:4:titulo" ),
       descripcion: t( "modalProyectos:4:descripcion" ),
       imagenPrincipal: imagenPIonicCadif1
     }
@@ -87,14 +83,50 @@ const Work = () => {
 
         } )
       )
-  const handleCardClick = ( title,description ) =>
+  const handleCardClick = ( title, description ) =>
   {
     switch ( title )
     {
       case "Tienda Virtual,proyecto final académico":
-        dispatch( toggleModalProject( <ModalProject title={title} images={carrouselIonicCadif1} descripcion={description} /> ) )
+        const carrouselIonicCadif1 =
+        [
+          imagenPIonicCadif1,
+          ionicCadif1carrousel1,
+          ionicCadif1carrousel2,
+          ionicCadif1carrousel3,
+          ionicCadif1carrousel4,
+          ionicCadif1carrousel5,
+          ionicCadif1carrousel6
+        ]
+        const proyectoMovilCadif =
+        {
+          ...proyectos[3],
+          images: carrouselIonicCadif1,
+          url: "https://gitlab.com/Peererxon/proyectoionic_cadif1",
+          demo: false
+        }
+        //dispatch( toggleModalProject( <ModalProject title={title} images={carrouselIonicCadif1} descripcion={description} url={"https://gitlab.com/Peererxon/proyectoionic_cadif1"}  /> ) )
+        dispatch( toggleModalProject( <ModalProject {...proyectoMovilCadif} /> ) )
         break;
 
+      case "FoundussApp":
+        const foundusApp =
+        {
+          ...proyectos[0],
+          images: [imagenPFoundussApp],
+          demo: false
+        }
+        dispatch( toggleModalProject( <ModalProject {...foundusApp} /> ) )
+        break
+      case "Caprofula":
+        const caprofula = {
+          ...proyectos[1],
+          images: [imagenPFoundussApp],
+          demo: true,
+          url: "http://caprofula.com/#/"
+        }
+        dispatch( toggleModalProject( <ModalProject {...caprofula} /> ) )
+        break;
       default:
         break;
     }
@@ -105,14 +137,14 @@ const Work = () => {
     <Projects>
       {
         proyectos.map(
-          ( { titulo, descripcion, imagenPrincipal }, index ) =>
+          ( { title, descripcion, imagenPrincipal }, index ) =>
           {
             return (
               <div key={index}>
 
                 <ProjectCard
                   key={index}
-                  title={titulo}
+                  title={title}
                   description={descripcion}
                   handleClick= {handleCardClick}
                   imagen={<img src={imagenPrincipal} alt="imagen presentacional de proyecto realizado" title="click para ver mas sobre el proyecto" />}

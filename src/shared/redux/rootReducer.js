@@ -9,6 +9,7 @@ export default combineReducers({
     animation: 'zoomIn',
     duration: 200,
     mask: true,
+    title: null,
     /* initial state, see API reference */
   } ),
 })
