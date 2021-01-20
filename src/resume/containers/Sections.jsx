@@ -1,12 +1,13 @@
 import React from 'react';
 
-export const Sections = ( {children} ) => {
-    return (
-        <div className ="container">
-            <div className="row">
-                {children}
+// eslint-disable-next-line brace-style
+export const Sections = ( { children } ) => {
+  return (
+    <div className ="container">
+      <div className="row">
+        {children}
 
-            </div>
-        </div>
-    )
+      </div>
+    </div>
+  )
 }

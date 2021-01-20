@@ -9,7 +9,7 @@ import Portafolio from './shared/routes/App';
 import * as serviceWorker from './serviceWorker';
 //redux
 import { Provider } from 'react-redux';
-import  store  from './shared/redux/store';
+import store from './shared/redux/store';
 
 ReactDOM.render(
   <React.StrictMode>
