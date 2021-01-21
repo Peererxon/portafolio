@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/Header.scss";
 import Logo from './Statics/frontal-min.png';
-//import M from "materialize-css/dist/js/materialize.min.js";
-//import { BrowserRouter, Route } from "react-router-dom";
+import i18next from 'i18next';
 
 const Header = () => {
-  return(
+  return (
     <>
       <header>
         <nav>
@@ -22,7 +21,7 @@ const Header = () => {
                 </Link>
               </li>
 
-{/*               <li>
+              {/*               <li>
                 <Link to={"about"}>
                   About
                 </Link>
@@ -33,14 +32,14 @@ const Header = () => {
                   Resume
                 </Link>
               </li>
-              
+
               <li>
                 <Link to={"work"}>
                   Work
                 </Link>
               </li>
-              
-{/*               <li>
+
+              {/*               <li>
                 <Link to={"contact"}>
                   Contact
                 </Link>
@@ -55,7 +54,7 @@ const Header = () => {
             </Link>
           </li>
 
-{/*           <li>
+          {/*           <li>
             <Link to={"about"}>
               About
             </Link>
@@ -66,19 +65,32 @@ const Header = () => {
               Resume
             </Link>
           </li>
-          
+
           <li>
             <Link to={"work"}  className = "sidenav-close">
               Work
             </Link>
           </li>
-          
-{/*           <li>
+
+          {/*           <li>
             <Link to={"contact"}>
               Contact
             </Link>
           </li>
- */}        </ul>
+ */}
+          <li>
+            <a className = "sidenav-close">
+              <div className="switch">
+                <label>
+                  <span role="img" aria-label="bandera de estados unidos">🇪🇸</span>
+                  <input type="checkbox" onChange= {( e ) => e.target.checked ? i18next.changeLanguage( 'en' ): i18next.changeLanguage( 'es' ) } />
+                  <span className="lever"/>
+                  <span role="img" aria-label="bandera de estados unidos">🇺🇸</span>
+                </label>
+              </div>
+            </a>
+          </li>
+        </ul>
       </header>
     </>
   );
