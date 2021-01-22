@@ -1,4 +1,20 @@
 {
+    "layout": {
+        "header":{
+            "links":{
+                "inicio":"Inicio",
+                "resumen": "Resumen",
+                "trabajo":"Proyectos"
+            },
+            "tooltip": "Bienvenido! Soy Anderson Gil"
+        },
+        "footer":{
+            "titulo":"Contacto",
+            "invitacion": "¿Quieres que trabajemos juntos en un proyecto?",
+            "sigueme":"Sigueme!",
+            "derechos":"Todos los derechos reservados."
+        }
+    },
     "home": {
         "hello": "Bienvenido, soy",
         "roll":"Desarrollador web",
@@ -48,13 +64,13 @@
             "tipo":"Aplicación Web",
             "cliente": "Ruby",
             "modalidad": "Remoto",
-            "descripcion": "bla bla bla"
+            "descripcion": ""
         },
         "3":{
+            "titulo":"Guitarras invie",
             "tipo":"Aplicación Web",
-            "cliente": "Proyecto personal",
             "modalidad": "Remoto",
-            "descripcion": "bla bla bla"
+            "descripcion": "Aplicación de practica (NO responsive, se recomienda probar en una desktop) hecha en reactJs cuya finalidad son las animaciones en ReactJs. Cuenta con un 'EasterEgg'. Para ver las animaciones escribir en el teclado recién cargue la pagina 'invie' (sin las comillas) y para volverla a su estado inicial, teclear 'goback' (sin las comillas,nuevamente)"
         },
         "4":{
             "titulo": "Tienda Virtual,proyecto final académico",
@@ -62,17 +78,10 @@
             "cliente": "CADIF1",
             "modalidad": "Remoto",
             "descripcion": "bla bla bla"
-        }
-        
-    },
-    "work": {
-        "currentLanguage": "The current language is ",
-        "actions": {
-            "toggleToGerman": "Deutsch",
-            "toggleToEnglish": "English",
-            "toggleToArabic": "Arabic",
-            "goToPage2": "Open page 2"
         },
-        "infoText": "<0><0>Zero </O><1>One </1><2>Two </2><3>Three </3><4>Four</4></O>"
+        "categoria":"Categoria",
+        "cliente":"Cliente",
+        "modalidad":"Modalidad"
+        
     }
 }

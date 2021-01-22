@@ -3,8 +3,7 @@ import './styles/ProjectsModal.scss'
 import Slider from "react-slick";
 import PropTypes from 'prop-types';
 // eslint-disable-next-line brace-style
-const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente, descripcion, url, demo } ) => {
-  console.log("renderizando el modal: " + title, images, tipoDeDesarrollo, modalidad, cliente)
+const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente, descripcion, url = "", demo } ) => {
   const settings = {
     dots: false,
     lazyLoad: true,
@@ -39,13 +38,17 @@ const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente, d
         { modalidad ?
           <p className= "projectModal__p"> <strong>Modalida:</strong> {modalidad} </p> : null 
         }
-        { demo ?
-          <a className= "btn" href={url} >
-          view demo
-          </a> :
-          <a className= "btn" href={url} target="_blank" rel="noopener noreferrer" >
-          view repo
-          </a>
+        { url.length > 0 ?
+          demo ?
+            <a className= "btn" href={url} target="_blank" rel="noopener noreferrer">
+            view demo
+            </a> :
+            <a className= "btn" href={url} target="_blank" rel="noopener noreferrer" >
+            view repo
+            </a>
+          // eslint-disable-next-line operator-linebreak
+          : null
+          //si no hay url no mostramos nada
         }
         <p className= "projectModal__p"> {descripcion} </p>
       </div>
