@@ -1,4 +1,20 @@
 {
+    "layout": {
+        "header":{
+            "links":{
+                "inicio":"Home",
+                "resumen": "Resume",
+                "trabajo":"Proyects"
+            },
+            "tooltip": "Welcome! This is me"
+        },
+        "footer":{
+            "titulo":"Contact",
+            "invitacion": "¿Do you want us to work together on a project?",
+            "sigueme":"Follow me!",
+            "derechos":"all the rights reserved."
+        }
+    },
     "home": {
         "hello": "Welcome, my name is",
         "roll":"Web developer",
@@ -12,7 +28,7 @@
         }
     },
     "resume": {
-        "title": "Resumen de Anderson",
+        "title": "Anderson's resume",
         "aspiracion": "Improve my Development skills through teamwork experience.",
         "secciones":{
             "titulos": "Professional Experience,Professional studies,Skills,Featured projects",
@@ -62,7 +78,9 @@
             "cliente": "CADIF1",
             "modalidad": "Remoto",
             "descripcion": "bla bla bla"
-        }
-        
+        },
+        "categoria":"Category",
+        "cliente":"Client",
+        "modalidad":"Modality"
     }
 }

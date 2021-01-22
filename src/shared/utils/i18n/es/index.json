@@ -1,4 +1,20 @@
 {
+    "layout": {
+        "header":{
+            "links":{
+                "inicio":"Inicio",
+                "resumen": "Resumen",
+                "trabajo":"Proyectos"
+            },
+            "tooltip": "Bienvenido! Soy Anderson Gil"
+        },
+        "footer":{
+            "titulo":"Contacto",
+            "invitacion": "¿Quieres que trabajemos juntos en un proyecto?",
+            "sigueme":"Sigueme!",
+            "derechos":"Todos los derechos reservados."
+        }
+    },
     "home": {
         "hello": "Bienvenido, soy",
         "roll":"Desarrollador web",
@@ -62,7 +78,10 @@
             "cliente": "CADIF1",
             "modalidad": "Remoto",
             "descripcion": "bla bla bla"
-        }
+        },
+        "categoria":"Categoria",
+        "cliente":"Cliente",
+        "modalidad":"Modalidad"
         
     }
 }
