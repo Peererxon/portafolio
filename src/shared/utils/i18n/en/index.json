@@ -1,8 +1,8 @@
 {
     "home": {
-        "hello": "Hi, i am",
-        "roll":"Web Developer",
-        "quienSoy": "Soy un entusiasta Desarrollador FrontEnd, geek amante del trabajo en equipo",
+        "hello": "Welcome, my name is",
+        "roll":"Web developer",
+        "quienSoy": "Soy un entusiasta Desarrollador FrontEnd",
         "resumen":  "Amante de la tecnología🤖, la industria 4.0 🏭 y la innovación en la era digital.",
         "servicios": {
             "titulo": "Servicios",
@@ -11,18 +11,58 @@
             "apps":"aplicaciones webs y nativas"
         }
     },
-    "page2": {
-        "title": "Page 2",
-        "introduction": "This text on page two."
-    },
-    "common": {
-        "currentLanguage": "The current language is ",
-        "actions": {
-            "toggleToGerman": "Deutsch",
-            "toggleToEnglish": "English",
-            "toggleToArabic": "Arabic",
-            "goToPage2": "Open page 2"
+    "resume": {
+        "title": "Resumen de Anderson",
+        "aspiracion": "Improve my Development skills through teamwork experience.",
+        "secciones":{
+            "titulos": "Professional Experience,Professional studies,Skills,Featured projects",
+            "habilidades": "React,Redux,Angular,Ionic,Git,Sass,Html,Css,Javascript,Docker,Webpack"
         },
-        "infoText": "<0><0>Zero </O><1>One </1><2>Two </2><3>Three </3><4>Four</4></O>"
+        "estudios": {
+            "titulos":"Carrera técnica programador FrontEnd (paquete de cursos),Escuela de Javascript(paquete de cursos),Fundamentos de Ingenieria de Software",
+            "contenidos":"Viewed courses: html, css, preprocessors, angular, JavaScript, typescript, object oriented programming, ionic, programming logic, jQuery, Bootstrap. Viewed courses: Reactjs, React router, Basic Webpack, JavaScript, git, frontend developer course, Prework: good practices and development environment.",
+            "platziEscuelaJS": "Javascript School (platzi). Platzi education platform (2019-2020). Viewed courses: Reactjs, React router, Basic Webpack, JavaScript, git, frontend developer course, Prework: good practices and development environment",
+            "cadif1": "FrontEnd technical programmer career. Academy Cadif1 (2018-2019). Cursos vistos: html, css, preprocesadores, angular ,JavaScript, typescript, programación orientada a objetos,  ionic, lógica de programación, jQuery, Bootstrap",
+            "platziArquitectura": "Fundamentals of Software Engineering. Platzi education platform (2019)"
+        },
+        "proyectos" : {
+          "1": "Hybrid mobile app . Client: Founduss general services company.",
+          "2": "Aplicación Web. Client: Ruby development software."
+        },
+        "experiencia": {
+            "Binaural": "Web developer. Binaural development software enterprise (2018-2019). Internships in the FrontEnd developer position, while I adapted to agile development methodologies and with the development team (QA, designer, DevOps, developers ...)",
+            "Founduss": "Hybrid mobile app development. Founduss general services company (2019-2020). It´s made an application with ionic, using the device's native storage, the camera and other functionalities. Planning and management of a small development team, for the integration of best software practices."
+        },
+        "skills": "React,Sass,Angular,Boostrap,Javascript,HTML,CSS,Git,Docker,Android"
+    },
+    "modalProyectos": {
+        "1":{
+            "titulo": "FoundussApp",
+            "tipo":"Hybrid mobile app",
+            "cliente": "Founduss general services company",
+            "modalidad": "Semi presencial",
+            "descripcion": "It´s made an application with ionic, using the device's native storage, the camera and other functionalities. Planning and management of a small development team, for the integration of best software practices."
+        },
+        "2":{
+            "titulo":"Caprofula",
+            "tipo":"Aplicación Web",
+            "cliente": "Ruby",
+            "modalidad": "Remoto",
+            "descripcion": ""
+        },
+        "3":{
+            "titulo":"Guitarras invie",
+            "tipo":"Aplicación Web",
+            "modalidad": "Remoto",
+            "descripcion": "Aplicación de practica (NO responsive, se recomienda probar en una desktop) hecha en reactJs cuya finalidad son las animaciones en ReactJs. Cuenta con un 'EasterEgg'. Para ver las animaciones escribir en el teclado recién cargue la pagina 'invie' (sin las comillas) y para volverla a su estado inicial, teclear 'goback' (sin las comillas,nuevamente)"
+        },
+        "4":{
+            "titulo": "Tienda Virtual,proyecto final académico",
+            "tipo":"Aplicación móvil Hibrida",            
+            "cliente": "CADIF1",
+            "modalidad": "Remoto",
+            "descripcion": "bla bla bla"
+        }
+        
     }
 }
