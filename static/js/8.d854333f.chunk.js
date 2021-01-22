@@ -1,2 +1,0 @@
-(this.webpackJsonpportafolio=this.webpackJsonpportafolio||[]).push([[8],{107:function(n,a,t){"use strict";t.r(a);var o=t(0),e=t.n(o);a.default=function(){return e.a.createElement(e.a.Fragment,null,"Pagina no encontrada")}}}]);
-//# sourceMappingURL=8.d854333f.chunk.js.map
