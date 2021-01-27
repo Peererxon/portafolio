@@ -7,7 +7,7 @@ const ProjectCard = ( { title, imagen, description, handleClick } ) => {
 
   return (
     <div className="project-item">
-      <div className="col s12 m4 l2">
+      <div className="col s12 m4">
         <div className="card hoverable">
 
           <div className="card-image" onClick={() => handleClick( title, description )}>

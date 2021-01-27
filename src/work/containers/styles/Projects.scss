@@ -5,3 +5,9 @@
     margin: 0px;
     background-color: $resume;
 }
+
+@media only screen and (min-width:$Tablets){
+    .projects{
+        min-height: 100vh;
+    }
+}
