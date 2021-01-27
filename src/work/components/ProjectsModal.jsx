@@ -17,8 +17,8 @@ const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente, d
   return (
     <div className="projectModal row">
       <h2> {title}</h2>
-      <div className="carrousel col s12 m5">
-        <div>
+      <div className = "col s12 m5">
+        <div className = "carrousel">
           <Slider {...settings}>
             {
               images.map( ( image, index ) =>
@@ -40,10 +40,10 @@ const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente, d
         }
         { url.length > 0 ?
           demo ?
-            <a className= "btn" href={url} target="_blank" rel="noopener noreferrer">
+            <a className= "btn btn--blue" href={url} target="_blank" rel="noopener noreferrer">
             view demo
             </a> :
-            <a className= "btn" href={url} target="_blank" rel="noopener noreferrer" >
+            <a className= "btn btn--orange" href={url} target="_blank" rel="noopener noreferrer" >
             view repo
             </a>
           // eslint-disable-next-line operator-linebreak

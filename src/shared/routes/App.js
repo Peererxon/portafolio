@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import './App.scss';
 import 'materialize-css/dist/css/materialize.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './App.scss';
 import Preloader from '../components/Preloader_line';
 import store from '../redux/store';
 
