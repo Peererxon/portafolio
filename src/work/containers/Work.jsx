@@ -93,7 +93,7 @@ const Work = () => {
   {
     switch ( title )
     {
-      case "Tienda Virtual,proyecto final académico":
+      case "Tienda Virtual, proyecto final académico":
         const carrouselIonicCadif1 =
         [
           imagenPIonicCadif1,
