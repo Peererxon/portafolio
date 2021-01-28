@@ -1,0 +1,11 @@
+.col.col{
+    &--no-padding{
+        padding: 0px;
+    }
+}
+
+.row{
+    &--no-mb{
+        margin-bottom: 0;
+    }
+}
