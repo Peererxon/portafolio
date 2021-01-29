@@ -16,7 +16,7 @@ const ProjectsModal = ( { title, images, tipoDeDesarrollo, modalidad, cliente, d
 
   return (
     <div className="projectModal row">
-      <h2> {title}</h2>
+      <h3 className="projectModal__h3"> {title}</h3>
       <div className = "col s12 m5">
         <div className = "carrousel">
           <Slider {...settings}>
