@@ -3,7 +3,21 @@
     height: 280px;
     overflow: hidden;
     position: relative; //for the arrows of slick
+    &-fullHeight{
+        height: initial;
+    }
     &__img{
         width: 100%;
+        cursor: pointer;
+    }
+    &__h2{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 30px;
+
+    }
+    &__div{
+        height: 280px;
+        overflow: hidden;
     }
 }
