@@ -1,17 +1,6 @@
 import React, { useCallback } from 'react'
 import ProjectCard  from '../components/ProjectCard';
 import Projects from './Projects';
-import {
-  faReact,
-  faAngular,
-  faAndroid,
-  faJs,
-  faBootstrap,
-  faDocker,
-  faSass,
-  faHtml5,
-  faCss3Alt
-} from '@fortawesome/free-brands-svg-icons';
 
 // Assets Ionic cadif proyect
 import imagenPIonicCadif1 from '../../shared/Statics/trabajos/Ionic_proyectoCAD_7_Marcado.png'
