@@ -1,0 +1,9 @@
+.carrousel{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative; //for the arrows of slick
+    &__img{
+        width: 100%;
+    }
+}

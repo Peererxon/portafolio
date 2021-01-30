@@ -14,6 +14,7 @@ import store from '../redux/store';
 const NotFoundPromise = import( /* webpackChunkName: "notFoundLazy" */ '../../notfound/NotFount' );
 const reactReduxModal = import( /* webpackChunkName: "flex-Modal" */ 'react-redux-modal-flex' );
 //esto lo que hace es que notFound se cargue en la primera carga PERO no impida el flujo del render es decir carga en paralelo a la vista actual
+
 const NotFound = React.lazy( ()=> NotFoundPromise );
 const Modal = React.lazy( ()=> reactReduxModal );
 const Layout = React.lazy( () => import ( /* webpackChunkName: "LayoutLazy" */ '../Layout' ) );
