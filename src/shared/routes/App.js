@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import './App.scss';
 import 'materialize-css/dist/css/materialize.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './App.scss';
 import Preloader from '../components/Preloader_line';
 import store from '../redux/store';
 
@@ -14,6 +14,7 @@ import store from '../redux/store';
 const NotFoundPromise = import( /* webpackChunkName: "notFoundLazy" */ '../../notfound/NotFount' );
 const reactReduxModal = import( /* webpackChunkName: "flex-Modal" */ 'react-redux-modal-flex' );
 //esto lo que hace es que notFound se cargue en la primera carga PERO no impida el flujo del render es decir carga en paralelo a la vista actual
+
 const NotFound = React.lazy( ()=> NotFoundPromise );
 const Modal = React.lazy( ()=> reactReduxModal );
 const Layout = React.lazy( () => import ( /* webpackChunkName: "LayoutLazy" */ '../Layout' ) );
