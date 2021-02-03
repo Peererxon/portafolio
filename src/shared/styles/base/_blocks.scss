@@ -3,12 +3,12 @@
     height: 280px;
     overflow: hidden;
     position: relative; //for the arrows of slick
+    cursor: pointer;
     &-fullHeight{
         height: initial;
     }
     &__img{
         width: 100%;
-        cursor: pointer;
     }
     &__h2{
         text-align: center;
@@ -17,7 +17,16 @@
 
     }
     &__div{
-        height: 280px;
+        height: 250px;
         overflow: hidden;
     }
+}
+
+.copyright{
+    text-align: center;
+    display: block;
+    outline: none;
+    color: darkgray;
+    font-size: 11px;
+    padding-top: 10px;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 
-export default ( { descrip } ) => {
+export default ( { descrip } ) => (
   <p className="carrouselSync">{descrip}</p>
-}
+)
+

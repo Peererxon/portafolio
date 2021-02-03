@@ -18,6 +18,7 @@ import mobile from '../../shared/Statics/mobile_develop.jpg';
 import website from '../../shared/Statics/website_develop.jpg';
 import eccomerce from '../../shared/Statics/eccomerce_develop.jpg';
 import CarrouselItem from './CarrouselItem';
+import CarrouselSyncDescription from './CarrouselSyncDescription';
 export default class AsNavFor extends Component {
   constructor(props) {
     super(props);
@@ -55,20 +56,19 @@ export default class AsNavFor extends Component {
       },
     ]
 
-    this.settings = {
+    this.settings =
+    {
       dots: false,
       infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
       initialSlide: 0,
-      lazyLoad: true,
-      centerMode: true,
-      centerPadding: "0px",
       responsive: [
         {
           breakpoint: 1024,
-          settings: {
+          settings:
+          {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
@@ -76,17 +76,19 @@ export default class AsNavFor extends Component {
         },
         {
           breakpoint: 600,
-          settings: {
+          settings:
+          {
             slidesToShow: 2,
             slidesToScroll: 2,
-            initialSlide: 2
           }
         },
         {
           breakpoint: 480,
-          settings: {
+          settings:
+          {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            lazyLoad: true,
           }
         }
       ]
@@ -116,12 +118,6 @@ export default class AsNavFor extends Component {
               this.services.map( ( servicio, index ) => <CarrouselItem key={index} {...servicio} />
               )
             }
-            <div>
-              <h3>2 </h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
           </Slider>
 
         </div>
@@ -129,16 +125,17 @@ export default class AsNavFor extends Component {
           asNavFor={this.state.nav2}
           ref={slider => ( this.slider1 = slider )}
           arrows={false}
+          swipeToSlide={false}
         >
 
           <div>
-            <h1>Aplicaciones móviles</h1>
+            <CarrouselSyncDescription />
           </div>
           <div>
-            <h1>Paginas corporativas</h1>
+            <CarrouselSyncDescription descrip="DISEÑO WEB RESPONSIVO ADAPTABLE A DISPOSITIVOS MÓVILES"/>
           </div>
           <div>
-            <h1>Tiendas virtuales</h1>
+            <CarrouselSyncDescription />
           </div>
         </Slider>
       </div>
