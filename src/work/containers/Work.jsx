@@ -67,13 +67,13 @@ const Work = () => {
   //usa un dispatch del store
   const dispatch = useDispatch()
   const toggleModalProject =
-    ( component, text = "Cerrar", action = null ) =>
+    ( component) =>
       (
         ModalActions.toggleModal( {
           component: () => component,
+          textCancel: t( "modalProyectos:cerrarBoton" ),
           ok: {
-            text,
-            action: () => action
+            text: null
           }
 
         } )
@@ -100,7 +100,6 @@ const Work = () => {
           url: "https://gitlab.com/Peererxon/proyectoionic_cadif1",
           demo: false
         }
-        //dispatch( toggleModalProject( <ModalProject title={title} images={carrouselIonicCadif1} descripcion={description} url={"https://gitlab.com/Peererxon/proyectoionic_cadif1"}  /> ) )
         dispatch( toggleModalProject( <ModalProject {...proyectoMovilCadif} /> ) )
         break;
 
