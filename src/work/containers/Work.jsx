@@ -1,5 +1,5 @@
-import React, { useCallback } from 'react'
-import ProjectCard  from '../components/ProjectCard';
+import React from 'react'
+import ProjectCard from '../components/ProjectCard';
 import Projects from './Projects';
 
 // Assets Ionic cadif proyect
@@ -20,6 +20,7 @@ import carprofulacarrousel1 from '../../shared/Statics/trabajos/caprofula_notici
 
 import { useTranslation } from 'react-i18next';
 
+//modal
 import { actions as ModalActions } from 'react-redux-modal-flex';
 import ModalProject from '../components/ProjectsModal';
 import { useDispatch } from 'react-redux';

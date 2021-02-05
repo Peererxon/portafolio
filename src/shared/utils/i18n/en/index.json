@@ -68,21 +68,21 @@
             "titulo":"Caprofula",
             "tipo":"Aplicación Web",
             "cliente": "Ruby",
-            "modalidad": "Remoto",
+            "modalidad": "Remote",
             "descripcion": ""
         },
         "3":{
             "titulo":"Guitarras invie",
             "tipo":"Aplicación Web",
-            "modalidad": "Remoto",
+            "modalidad": "Remote",
             "descripcion": "Aplicación de practica (NO responsive, se recomienda probar en una desktop) hecha en reactJs cuya finalidad son las animaciones en ReactJs. Cuenta con un 'EasterEgg'. Para ver las animaciones escribir en el teclado recién cargue la pagina 'invie' (sin las comillas) y para volverla a su estado inicial, teclear 'goback' (sin las comillas,nuevamente)"
         },
         "4":{
             "titulo": "Tienda Virtual, proyecto final académico",
-            "tipo":"Aplicación móvil Hibrida",            
+            "tipo":"Hybrid mobile app",            
             "cliente": "CADIF1",
-            "modalidad": "Remoto",
-            "descripcion": "bla bla bla"
+            "modalidad": "Remote",
+            "descripcion": ""
         },
         "categoria":"Category",
         "cliente":"Client",
