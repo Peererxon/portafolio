@@ -113,7 +113,7 @@ class AsNavFor extends Component {
     ]
     return (
       <div className= "services">
-        <h2 className="services__h2">Servicios</h2>
+        <h2 className="services__h2">{this.t( "home:servicios:titulo" )}</h2>
         <div className = "carrousel carrousel-fullHeight">
           <Slider
             {...this.settings}
