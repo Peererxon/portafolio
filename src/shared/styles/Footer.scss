@@ -23,14 +23,13 @@
 .footer{
     &--card{
         background-color: $palet2;
-        margin-bottom: 10px;
 
     }
 
     &__img{
         padding-bottom: 10px;
-        margin-left: 15px;
         &--zoom{
+            margin-top: 15px;
             animation: zoomInverted 2.5s cubic-bezier(0.99, -0.04, 1, 1) infinite alternate;
             
         }
@@ -38,12 +37,15 @@
 }
 
 .footer__contact_h5{
-    width: 100px;
+    text-align: center;
 }
 
 @media screen and (min-width:$Tablets){
 
     .footer__contact {
+        &_h5{
+            width: 150px;
+        }
         .hr--reveal{
             width: 5px;
             transition: width 0.3s ease-out;

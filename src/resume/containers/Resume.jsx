@@ -50,10 +50,10 @@ const Resume = () => {
   titulos.map( ( titulo, index ) => secciones[index] = { ...secciones[index], titulo } )
 
   //got te index of the array to fill it by him content (if i change the order in the near future it wont be broken :) )
-  const habilidadesIndex = secciones.findIndex( element => element.titulo.trim() === "Habilidades" )
-  const experienciaLaboralIndex = secciones.findIndex( element => element.titulo.trim() === "Experiencia Laboral" )
-  const estudiosIndex = secciones.findIndex( element => element.titulo.trim() === "Estudios Profesionales" )
-  const proyectosDestacadosIndex = secciones.findIndex( element => element.titulo.trim() === "Proyectos más destacados" )
+  const habilidadesIndex = secciones.findIndex( ( { titulo } ) => ( titulo.trim() === "Habilidades" ) || ( titulo.trim() === "Skills" ) )
+  const experienciaLaboralIndex = secciones.findIndex( ( { titulo } ) => ( titulo.trim() === "Experiencia Laboral" ) || ( titulo.trim() === "Professional Experience" ) )
+  const estudiosIndex = secciones.findIndex( ( { titulo } ) => ( titulo.trim() === "Estudios Profesionales" ) || ( titulo.trim() === "Professional studies" ) )
+  const proyectosDestacadosIndex = secciones.findIndex( ( { titulo } ) => ( titulo.trim() === "Proyectos más destacados" ) || ( titulo.trim() === "Featured projects" ) )
 
   secciones[estudiosIndex].contenidos = [platziEscuelaJS, cadif1FrontEnd, platziArquitectura]
   secciones[habilidadesIndex].contenidos = [...habilidades]
@@ -65,15 +65,15 @@ const Resume = () => {
   console.groupEnd()
   return (
     <div className = "Resume">
-      <Heading />
+      <Heading title={t( "resume:title" )} body={t( "resume:aspiracion" )}/>
       <Sections >
-        {secciones.map( ( { titulo, contenidos }, index ) => 
+        {secciones.map( ( { titulo, contenidos }, index ) =>
         {
 
           if ( contenidos !== undefined )
           {
-            if ( titulo === "Habilidades" )
-            //si es iterable
+            if ( habilidadesIndex === index )
+            //si es iterable, (esto solo ocurre en la sección de habilidades de momento)
             {
               return <SectionTitle key={index} title={titulo} body= {<SectionBodyList elementos={contenidos}/>} />
             }

@@ -1,0 +1,12 @@
+@import '../vars';
+.btn{
+    &--blue{
+        background-color: $palet1;
+        &:hover{
+            background-color: lighten( $palet1,10%) ;
+        }
+        &:focus{
+            background-color: darken($palet1, 10%) ;
+        }
+    }
+}

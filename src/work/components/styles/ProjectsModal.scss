@@ -2,36 +2,34 @@
 .projectModal {
     width: 90vw;
     background-color: $resume;
-
+    margin: 0;
+    padding-bottom: 15px;
     &__body{
         //margin-top: calc(2.3733333333rem + 1.424rem + 54px);
         // the size of the h2 and theres margins
-        text-align: center;
     }
 
     &__p{
         text-align: justify;
         color: black;
     }
-}
 
-.carrousel{
-    width: 100%;
-
-    &__img{
-        //max-height: 350px;
-        width: 100%;
+    &__h3{
+        margin-top: 0;
     }
-}
-
-.projectModal .slick-prev, .projectModal .slick-next{
-    z-index: 9;
-}
-
-.projectModal .slick-next {
-    right: 0px;
-}
-
-.projectModal .slick-prev {
-    left: 0px;
+    //all referer with the slick library
+    .slick-slider{
+        position: static;
+    }
+    .slick-prev,.slick-next{
+        z-index: 9;
+    }
+    
+    .slick-next{
+        right: 0px;    
+    }
+    
+    .slick-prev{
+        left: 0px;
+    }
 }

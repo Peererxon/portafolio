@@ -1,17 +1,6 @@
-import React, { useCallback } from 'react'
-import ProjectCard  from '../components/ProjectCard';
+import React from 'react'
+import ProjectCard from '../components/ProjectCard';
 import Projects from './Projects';
-import {
-  faReact,
-  faAngular,
-  faAndroid,
-  faJs,
-  faBootstrap,
-  faDocker,
-  faSass,
-  faHtml5,
-  faCss3Alt
-} from '@fortawesome/free-brands-svg-icons';
 
 // Assets Ionic cadif proyect
 import imagenPIonicCadif1 from '../../shared/Statics/trabajos/Ionic_proyectoCAD_7_Marcado.png'
@@ -25,8 +14,13 @@ import ionicCadif1carrousel6 from '../../shared/Statics/trabajos/Ionic_proyectoC
 // assets foundussMovil proyect
 import imagenPFoundussApp from '../../shared/Statics/trabajos/proyecto_FoundussApp.jpg'
 
+//assets caprofula proyect
+import imagenPCaprofula from '../../shared/Statics/trabajos/caprofula_edicion_informacion.jpg'
+import carprofulacarrousel1 from '../../shared/Statics/trabajos/caprofula_noticias_ejecucion.png'
+
 import { useTranslation } from 'react-i18next';
 
+//modal
 import { actions as ModalActions } from 'react-redux-modal-flex';
 import ModalProject from '../components/ProjectsModal';
 import { useDispatch } from 'react-redux';
@@ -49,14 +43,16 @@ const Work = () => {
       cliente: t( "modalProyectos:2:cliente" ),
       tipoDeDesarrollo: t( "modalProyectos:2:tipo" ),
       modalidad: t( "modalProyectos:2:modalidad" ),
-      descripcion: t( "modalProyectos:2:descripcion" )
+      descripcion: t( "modalProyectos:2:descripcion" ),
+      imagenPrincipal: imagenPCaprofula
     }, //caprofula
     {
+      title: t( "modalProyectos:3:titulo" ),
       cliente: t( "modalProyectos:3:cliente" ),
       tipoDeDesarrollo: t( "modalProyectos:3:tipo" ),
       modalidad: t( "modalProyectos:3:modalidad" ),
       descripcion: t( "modalProyectos:3:descripcion" )
-    },
+    }, //invie
     {
       cliente: t( "modalProyectos:4:cliente" ),
       tipoDeDesarrollo: t( "modalProyectos:4:tipo" ),
@@ -72,13 +68,13 @@ const Work = () => {
   //usa un dispatch del store
   const dispatch = useDispatch()
   const toggleModalProject =
-    ( component, text = "Cerrar", action = null ) =>
+    ( component) =>
       (
         ModalActions.toggleModal( {
           component: () => component,
+          textCancel: t( "modalProyectos:cerrarBoton" ),
           ok: {
-            text,
-            action: () => action
+            text: null
           }
 
         } )
@@ -87,7 +83,7 @@ const Work = () => {
   {
     switch ( title )
     {
-      case "Tienda Virtual,proyecto final académico":
+      case "Tienda Virtual, proyecto final académico":
         const carrouselIonicCadif1 =
         [
           imagenPIonicCadif1,
@@ -105,7 +101,6 @@ const Work = () => {
           url: "https://gitlab.com/Peererxon/proyectoionic_cadif1",
           demo: false
         }
-        //dispatch( toggleModalProject( <ModalProject title={title} images={carrouselIonicCadif1} descripcion={description} url={"https://gitlab.com/Peererxon/proyectoionic_cadif1"}  /> ) )
         dispatch( toggleModalProject( <ModalProject {...proyectoMovilCadif} /> ) )
         break;
 
@@ -121,11 +116,21 @@ const Work = () => {
       case "Caprofula":
         const caprofula = {
           ...proyectos[1],
-          images: [imagenPFoundussApp],
+          images: [imagenPCaprofula, carprofulacarrousel1],
           demo: true,
           url: "http://caprofula.com/#/"
         }
         dispatch( toggleModalProject( <ModalProject {...caprofula} /> ) )
+        break;
+
+      case "Guitarras invie":
+        const invie = {
+          ...proyectos[2],
+          images: [],
+          demo: true,
+          url: "https://peererxon.github.io/react_animated/"
+        }
+        dispatch( toggleModalProject( <ModalProject {...invie} /> ) )
         break;
       default:
         break;
