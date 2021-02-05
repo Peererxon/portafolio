@@ -9,3 +9,12 @@
         margin-bottom: 0;
     }
 }
+
+.switch{
+    &--large{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
