@@ -24,7 +24,7 @@
             position: relative;
             z-index: 1;
             transform: translate3d(0,-50px,-40px);
-            transition: transform 1s;
+            transition: transform 0.7s;
         }
     
         &:hover &__p {
@@ -32,7 +32,7 @@
         }
     
         &:hover &__img {
-            transition: filter 2s linear;
+            transition: filter 1s linear;
             filter: grayscale(0%);
         }
     }
