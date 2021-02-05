@@ -65,7 +65,7 @@ const Resume = () => {
   console.groupEnd()
   return (
     <div className = "Resume">
-      <Heading />
+      <Heading title={t( "resume:title" )} body={t( "resume:aspiracion" )}/>
       <Sections >
         {secciones.map( ( { titulo, contenidos }, index ) =>
         {
