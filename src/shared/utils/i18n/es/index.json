@@ -22,9 +22,14 @@
         "resumen":  "Amante de la tecnología🤖, la industria 4.0 🏭 y la innovación en la era digital.",
         "servicios": {
             "titulo": "Servicios",
-            "Paginas": "Paginas Web corporativas",
+            "paginas": "Páginas Web corporativas",
             "ecommerces":"Tiendas virtuales",
-            "apps":"aplicaciones webs y nativas"
+            "apps":"aplicaciones webs y nativas",
+            "descripcionServicios": {
+                "paginas": "Páginas web dinámicas, adaptables a teléfonos,tablets,laptops... Hechas para llevar tu negocio al siguiente nivel ( la era digital ) y darte a conocer.",
+                "ecommerces": "Tiendas virtuales para automatizar tu negocio con modulos de ventas y pasarelas de pagos.",
+                "apps": "Aplicaciones móviles atractivas e intuitivas para android e ios que brindan a tus clientes la comodidad de tenerte en sus dispositivos móviles  "
+            }
         }
     },
     "resume": {
@@ -81,7 +86,7 @@
         },
         "categoria":"Categoria",
         "cliente":"Cliente",
-        "modalidad":"Modalidad"
-        
+        "modalidad":"Modalidad",
+        "cerrarBoton": "Cerrar"
     }
 }
