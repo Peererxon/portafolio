@@ -17,6 +17,14 @@ const Header = () => {
             <Link to={process.env.PUBLIC_URL} className ="tooltipped" data-position="right" data-tooltip= {t( "layout:header:tooltip" )}>
               <img src={ Logo } alt="imagen principal" className="brand-logo circle responsive-img" />
             </Link>
+            <span className=" hide-on-med-and-down switch switch--large">
+              <label>
+                <span role="img" aria-label="bandera de estados españa">🇪🇸</span>
+                <input type="checkbox" onChange= {( e ) => e.target.checked ? i18next.changeLanguage( 'en' ) : i18next.changeLanguage( 'es' ) } />
+                <span className="lever"/>
+                <span role="img" aria-label="bandera de estados unidos">🇺🇸</span>
+              </label>
+            </span>
             <Link to="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
             <ul className="right hide-on-med-and-down">
               <li>
@@ -87,7 +95,7 @@ const Header = () => {
                 <a className = "sidenav-close">
                   <div className="switch">
                     <label>
-                      <span role="img" aria-label="bandera de estados unidos">🇪🇸</span>
+                      <span role="img" aria-label="bandera de estados españa">🇪🇸</span>
                       <input type="checkbox" onChange= {( e ) => e.target.checked ? i18next.changeLanguage( 'en' ) : i18next.changeLanguage( 'es' ) } />
                       <span className="lever"/>
                       <span role="img" aria-label="bandera de estados unidos">🇺🇸</span>
