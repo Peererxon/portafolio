@@ -21,10 +21,15 @@
         "quienSoy": "Soy un entusiasta Desarrollador FrontEnd",
         "resumen":  "Amante de la tecnología🤖, la industria 4.0 🏭 y la innovación en la era digital.",
         "servicios": {
-            "titulo": "Servicios",
-            "Paginas": "Paginas Web corporativas",
-            "ecommerces":"Tiendas virtuales",
-            "apps":"aplicaciones webs y nativas"
+            "titulo": "Services",
+            "paginas": "Corporate Websites",
+            "ecommerces":"Virtual shops/ecommerces",
+            "apps":"Mobile apps",
+            "descripcionServicios": {
+                "paginas": "Dinamic Websites, responsives to cellphones,tablets,laptops... Mades for reach your business to the next level ( the digital age ) and be known for everyone.",
+                "ecommerces": "Ecommerces to automate your business, with modules for payments and shopping carts.",
+                "apps": "Intuitive and engaging mobile apps for iOS and Android that brings your clients the feedback of have you in its cellphones."
+            }
         }
     },
     "resume": {
@@ -81,6 +86,7 @@
         },
         "categoria":"Category",
         "cliente":"Client",
-        "modalidad":"Modality"
+        "modalidad":"Modality",
+        "cerrarBoton": "Close"
     }
 }
