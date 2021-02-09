@@ -56,6 +56,11 @@
         },
         "skills": "React,Sass,Angular,Boostrap,Javascript,HTML,CSS,Git,Docker,Android"
     },
+    "proyectos":{
+        "card": {
+            "verMas": "See more about"
+        } 
+     },
     "modalProyectos": {
         "1":{
             "titulo": "FoundussApp",
