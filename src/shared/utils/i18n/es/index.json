@@ -11,7 +11,7 @@
         "footer":{
             "titulo":"Contacto",
             "invitacion": "¿Quieres que trabajemos juntos en un proyecto?",
-            "sigueme":"Sigueme!",
+            "sigueme":"¡Sígueme!",
             "derechos":"Todos los derechos reservados."
         }
     },
@@ -74,13 +74,13 @@
             "tipo":"Aplicación Web",
             "cliente": "Ruby",
             "modalidad": "Remoto",
-            "descripcion": ""
+            "descripcion": "bla bla bla estafa bla bla"
         },
         "3":{
             "titulo":"Guitarras invie",
             "tipo":"Aplicación Web",
             "modalidad": "Remoto",
-            "descripcion": "Aplicación de practica (NO responsive, se recomienda probar en una desktop) hecha en reactJs cuya finalidad son las animaciones en ReactJs. Cuenta con un 'EasterEgg'. Para ver las animaciones escribir en el teclado recién cargue la pagina 'invie' (sin las comillas) y para volverla a su estado inicial, teclear 'goback' (sin las comillas,nuevamente)"
+            "descripcion": "Aplicación de practica (NO RESPONSIVE, se recomienda probar en una desktop) hecha en reactJs cuya finalidad son las animaciones en ReactJs. Cuenta con un 'EasterEgg'. Para ver las animaciones escribir en el teclado recién cargue la pagina 'invie' (sin las comillas) y para volverla a su estado inicial, teclear 'goback' (sin las comillas,nuevamente)."
         },
         "4":{
             "titulo": "Tienda Virtual, proyecto final académico",
