@@ -14,28 +14,29 @@ const Footer = () => {
   return (
     <footer className="footer--card">
       <div className="row row--no-mb">
-        <div className="col l12 offset-s3 s6 footer__contact">
+        <div className="col l6 offset-s3 s6 footer__contact">
           <div className = "footer__contact_h5">
 
             <h5 className="white-text">{ t( "layout:footer:titulo" ) }</h5>
             <hr className="hr--reveal" />
           </div>
+          {/* MAILTO*/}
+          <div>
+            <a
+              className="grey-text text-lighten-4"
+              href="mailto:andersongil.dev@gmail.com?Subject=(portafolio)%20Quiero%20hacer%20un%20proyecto%20contigo"
+            >
+              { t( "layout:footer:invitacion" ) }<span className ="hide-on-small-only"> <img src={correoIcon} title="Imagen de una carta de correo para contactarme" alt="Enviar un correo a anderson gil (peererxon)"/> </span>
+            </a>
 
-        </div>
-
-        <div className="col l6 offset-s3 s6">
-          <a
-            className="grey-text text-lighten-4"
-            href="mailto:andersongil.dev@gmail.com?Subject=(portafolio)%20Quiero%20hacer%20un%20proyecto%20contigo"
-          >
-            { t( "layout:footer:invitacion" ) }<span className ="hide-on-small-only"> <img src={correoIcon} title="Imagen de una carta de correo para contactarme" alt="Enviar un correo a anderson gil (peererxon)"/> </span>
-          </a>
+          </div>
+          {/* ENDMAILTO*/}
         </div>
 
         {/* SOCIALSNETWORKS */}
         <div className="col l6 offset-s3 s6 center-align">
 
-          <div className="col col--no-padding s12 offset-m3 m9">
+          <div className="col col--no-padding s12 ">
             <h5 className="white-text">
               { t( "layout:footer:sigueme" ) }
               <div>
@@ -94,7 +95,6 @@ const Footer = () => {
           </div>
         </div>
         {/* ENDSOCIALSNETWORKS */}
-
         {/* COPYRIGHT */}
         <div className="col col--no-padding s6 offset-s3 m4 offset-m4">
           <div className="footer-copyright center-align">
