@@ -1,0 +1,27 @@
+@import '../../../shared/styles/vars';
+
+.cardServices{
+    background-color: $resume;
+    display: flex;
+    border-radius: $radius-cards;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    &__img{
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        border-radius: 50%;
+    }
+
+    &__h2{
+        font-size: $titleSize-s;
+        text-align: center;
+    }
+
+    &__p{
+        font-size: $text-s;
+        color: lighten(black, 30);
+        text-align: center;
+    }
+}

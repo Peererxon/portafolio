@@ -2,23 +2,4 @@
     &__h2{
         text-align: center;
     }
-
-    .slick-slider{
-        width: 90%;
-        margin: auto;
-        position:static;
-        //height: 100%;
-    }
-
-    .slick-prev{
-        left: 0%;
-        top:calc(140px);
-        z-index: 9;
-    }
-
-    .slick-next{
-        right: 0%;
-        top: calc(140px);
-        z-index: 9;
-    }
 }
