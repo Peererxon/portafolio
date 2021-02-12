@@ -1,91 +1,91 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d311af99efe51b27e0267eba38f9b0b2",
+    "revision": "ceca5c5f43b26c6762487b542e702316",
     "url": "/portafolio/index.html"
   },
   {
-    "revision": "b7ca72c0d2ac68b8590f",
-    "url": "/portafolio/static/css/8.7d838e97.chunk.css"
+    "revision": "2d7cab2eec472c47012f",
+    "url": "/portafolio/static/css/9.7d838e97.chunk.css"
   },
   {
-    "revision": "4a4473c934d8565c2605",
-    "url": "/portafolio/static/css/HomeLazy.eb46b33b.chunk.css"
+    "revision": "f24405ca0623fc004457",
+    "url": "/portafolio/static/css/HomeLazy.d3ea3ddb.chunk.css"
   },
   {
-    "revision": "9328e0472b380ffaaf48",
+    "revision": "126178dc3ba37582ae7d",
     "url": "/portafolio/static/css/LayoutLazy.367e9111.chunk.css"
   },
   {
-    "revision": "ee6fb937fa955d103a45",
+    "revision": "900b85704f767da78d40",
     "url": "/portafolio/static/css/ResumeLazy.37656075.chunk.css"
   },
   {
-    "revision": "d0803354636ba3b4040b",
+    "revision": "29fa931f5c3e90a47539",
     "url": "/portafolio/static/css/WorkLazy.8494d34b.chunk.css"
   },
   {
-    "revision": "dd9fc43781530b4a98ee",
+    "revision": "48025c835a2ab1cb0cbd",
     "url": "/portafolio/static/css/main.b3a3f06f.chunk.css"
   },
   {
-    "revision": "020eeba47601a65247a8",
-    "url": "/portafolio/static/js/0.ef85059d.chunk.js"
+    "revision": "363565c159d48358377a",
+    "url": "/portafolio/static/js/0.5c52a41e.chunk.js"
   },
   {
-    "revision": "e62ad2085950c82253df",
-    "url": "/portafolio/static/js/10.5b685f69.chunk.js"
+    "revision": "9df37a48bbb8fdfe5dd1",
+    "url": "/portafolio/static/js/1.55d872b9.chunk.js"
   },
   {
-    "revision": "5473d58a7c3c49a3a773",
-    "url": "/portafolio/static/js/11.0e8e65a1.chunk.js"
-  },
-  {
-    "revision": "601c83c85129f3955a169de052f2ac58",
-    "url": "/portafolio/static/js/11.0e8e65a1.chunk.js.LICENSE.txt"
-  },
-  {
-    "revision": "b7ca72c0d2ac68b8590f",
-    "url": "/portafolio/static/js/8.6ca6bd0d.chunk.js"
-  },
-  {
-    "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/portafolio/static/js/8.6ca6bd0d.chunk.js.LICENSE.txt"
-  },
-  {
-    "revision": "d15f897c0b3d4d06b142",
-    "url": "/portafolio/static/js/9.3e25d43a.chunk.js"
+    "revision": "009e910ba729a00563f2",
+    "url": "/portafolio/static/js/10.19261efc.chunk.js"
   },
   {
     "revision": "5b6a3f1ca6e193597e4d49c7a42851aa",
-    "url": "/portafolio/static/js/9.3e25d43a.chunk.js.LICENSE.txt"
+    "url": "/portafolio/static/js/10.19261efc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a4473c934d8565c2605",
-    "url": "/portafolio/static/js/HomeLazy.47d154e0.chunk.js"
+    "revision": "136c8d28759854ac7d5b",
+    "url": "/portafolio/static/js/11.78122a48.chunk.js"
   },
   {
-    "revision": "9328e0472b380ffaaf48",
-    "url": "/portafolio/static/js/LayoutLazy.2e8a419b.chunk.js"
+    "revision": "601c83c85129f3955a169de052f2ac58",
+    "url": "/portafolio/static/js/11.78122a48.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee6fb937fa955d103a45",
-    "url": "/portafolio/static/js/ResumeLazy.9014abdc.chunk.js"
+    "revision": "2d7cab2eec472c47012f",
+    "url": "/portafolio/static/js/9.2fa63818.chunk.js"
   },
   {
-    "revision": "d0803354636ba3b4040b",
-    "url": "/portafolio/static/js/WorkLazy.df1631f8.chunk.js"
+    "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
+    "url": "/portafolio/static/js/9.2fa63818.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dd9fc43781530b4a98ee",
-    "url": "/portafolio/static/js/main.596449ec.chunk.js"
+    "revision": "f24405ca0623fc004457",
+    "url": "/portafolio/static/js/HomeLazy.ac609128.chunk.js"
   },
   {
-    "revision": "e4187558055d4f276256",
-    "url": "/portafolio/static/js/notFoundLazy.75447828.chunk.js"
+    "revision": "126178dc3ba37582ae7d",
+    "url": "/portafolio/static/js/LayoutLazy.6399cbe7.chunk.js"
   },
   {
-    "revision": "11127e1183f6437f306f",
-    "url": "/portafolio/static/js/runtime-main.88487088.js"
+    "revision": "900b85704f767da78d40",
+    "url": "/portafolio/static/js/ResumeLazy.c3313120.chunk.js"
+  },
+  {
+    "revision": "29fa931f5c3e90a47539",
+    "url": "/portafolio/static/js/WorkLazy.4e32f33b.chunk.js"
+  },
+  {
+    "revision": "48025c835a2ab1cb0cbd",
+    "url": "/portafolio/static/js/main.79c1fe4d.chunk.js"
+  },
+  {
+    "revision": "060451d9f7f922ee1837",
+    "url": "/portafolio/static/js/notFoundLazy.0d54f244.chunk.js"
+  },
+  {
+    "revision": "3078db5c7986c1c13055",
+    "url": "/portafolio/static/js/runtime-main.9cdc8e53.js"
   },
   {
     "revision": "1d754aeb103e86fdd991e9e575a45b77",
