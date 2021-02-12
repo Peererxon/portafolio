@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/ServiceCard.scss';
+import { Roll } from "react-awesome-reveal";
 
 // eslint-disable-next-line brace-style
 export default function ServiceCard( { service } ) {
@@ -7,16 +8,15 @@ export default function ServiceCard( { service } ) {
     <div className="row">
       <div className="col s12">
         <div className="cardServices">
-          <img src={service.image} alt="" className="cardServices__img"/>
+          <Roll cascade triggerOnce>
+            <img src={service.image} alt="" className="cardServices__img"/>
 
-          <h2 className="cardServices__h2">
-            {service.title}
-          </h2>
+            <h2 className="cardServices__h2"> {service.title} </h2>
 
-          <p className="cardServices__p">
-            {service.description}
-          </p>
-
+            <p className="cardServices__p">
+              {service.description}
+            </p>
+          </Roll>
         </div>
       </div>
     </div>

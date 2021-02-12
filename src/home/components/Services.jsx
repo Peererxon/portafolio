@@ -6,6 +6,7 @@ import website from '../../shared/Statics/website_develop.jpg';
 import eccomerce from '../../shared/Statics/eccomerce_develop.jpg';
 import ServiceCard from './ServiceCard';
 import { withTranslation } from 'react-i18next';
+import { Zoom } from 'react-awesome-reveal';
 class AsNavFor extends Component {
   constructor( props ) {
     super( props );
@@ -19,6 +20,7 @@ class AsNavFor extends Component {
     {
       dots: true,
       infinite: false,
+      lazyLoad: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -47,7 +49,6 @@ class AsNavFor extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            lazyLoad: true,
             centerMode: false,
           }
         }
@@ -101,7 +102,9 @@ class AsNavFor extends Component {
     ]
     return (
       <div className= "services">
-        <h2 className="services__h2">{this.t( "home:servicios:titulo" )}</h2>
+        <Zoom direction="right">
+          <h2 className="services__h2">{this.t( "home:servicios:titulo" )}</h2>
+        </Zoom>
         <Slider
           {...this.settings}
 
