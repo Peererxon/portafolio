@@ -68,7 +68,7 @@ const Work = () => {
   //usa un dispatch del store
   const dispatch = useDispatch()
   const toggleModalProject =
-    ( component) =>
+    ( component ) =>
       (
         ModalActions.toggleModal( {
           component: () => component,
