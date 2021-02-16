@@ -3,11 +3,15 @@
     min-height: 100px;
     width: 95%;
     margin: 0px auto;
-}
 
-.sectionbody ul div.list:first-child{
-    font-weight: bold;
-    list-style-type: disc;
+    &__li{
+        margin: 10px 0px;
+        text-align: justify;
+        &--withTitle{
+            font-weight: bold;
+            text-align: center;
+        }
+    }
 }
 
 @media (min-width:$PhonesLandscape){
