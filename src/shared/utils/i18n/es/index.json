@@ -74,11 +74,12 @@
             "tipo":"Aplicación Web",
             "cliente": "Ruby",
             "modalidad": "Remoto",
-            "descripcion": "bla bla bla estafa bla bla"
+            "descripcion": "Desarrollo de interfaces privadas como colaboración freelance a la empresa Ruby, en una aplicación web con consumo de API REST en varios CRUDS completos, formularios reactivos con campos estaticos y dinámicos, pipes y estandarizacion de código mediante el uso de un linter."
         },
         "3":{
             "titulo":"Guitarras invie",
             "tipo":"Aplicación Web",
+            "cliente":"Proyecto personal",
             "modalidad": "Remoto",
             "descripcion": "Aplicación de practica (NO RESPONSIVE, se recomienda probar en una desktop) hecha en reactJs cuya finalidad son las animaciones en ReactJs. Cuenta con un 'EasterEgg'. Para ver las animaciones escribir en el teclado recién cargue la pagina 'invie' (sin las comillas) y para volverla a su estado inicial, teclear 'goback' (sin las comillas,nuevamente)."
         },
@@ -87,7 +88,7 @@
             "tipo":"Aplicación móvil Hibrida",            
             "cliente": "CADIF1",
             "modalidad": "Remoto",
-            "descripcion": ""
+            "descripcion": "La aplicación contó con una pasarela de pago, carrito de compra, consumo de API para la visualización de los productos, creación de interfaces, y un filtrado por categorias para los productos."
         },
         "categoria":"Categoria",
         "cliente":"Cliente",
