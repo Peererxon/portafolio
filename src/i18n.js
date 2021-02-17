@@ -7,6 +7,7 @@ import es from './shared/utils/i18n/es/index.json'
 i18n
   .use( LanguageDetector )
   .use( initReactI18next )
+  // eslint-disable-next-line space-in-parens
   .init({
     resources: { en, es },
     fallbackLng: 'es',

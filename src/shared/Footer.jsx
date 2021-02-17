@@ -1,14 +1,16 @@
 import React from 'react';
 import './styles/Footer.scss';
-import facebookPic from './Statics/facebook.png';
-import linkedinPic from './Statics/linkedin.png';
-import githubPic from './Statics/github.png';
-import gitlabPic from './Statics/gitlab.png';
-import correoIcon from './Statics/correo.png';
-import clickUX from './Statics/actionClick.png';
 import { Slide, Roll, Bounce } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import { screenWidth } from './utils/js';
+//redes
+import facebookPic from './Statics/facebook.png';
+import linkedinPic from './Statics/linkedin.png';
+import githubPic from './Statics/github.png';
+import instagram from './Statics/instagram.png'
+//END redes
+import correoIcon from './Statics/correo.png';
+import clickUX from './Statics/actionClick.png';
 // eslint-disable-next-line brace-style
 const Footer = () => {
   const { t } = useTranslation();
@@ -67,12 +69,12 @@ const Footer = () => {
                 </a>
               </div>
               <div className="col col--no-padding s12 m3">
-                <a href="https://gitlab.com/Peererxon" rel="noopener noreferrer" target="_blank">
-                  <img src={gitlabPic} 
+                <a href="https://www.instagram.com/peererxon/?hl=es-la" rel="noopener noreferrer" target="_blank">
+                  <img src={instagram} 
                     className="footer__img"
                     width="50px"
-                    title="imagen de gitlab como medio de contacto"
-                    alt="gitlab de anderson gil para contactarlo"
+                    title="imagen de instagram como medio de contacto"
+                    alt="instagram de anderson gil para contactarlo"
                   />
 
                 </a>
@@ -112,12 +114,12 @@ const Footer = () => {
                 </a>
               </div>
               <div className="col col--no-padding s12 m3">
-                <a href="https://gitlab.com/Peererxon" rel="noopener noreferrer" target="_blank">
-                  <img src={gitlabPic} 
+                <a href="https://www.instagram.com/peererxon/?hl=es-la" rel="noopener noreferrer" target="_blank">
+                  <img src={instagram} 
                     className="footer__img"
                     width="50px"
-                    title="imagen de gitlab como medio de contacto"
-                    alt="gitlab de anderson gil para contactarlo"
+                    title="imagen de instagram como medio de contacto"
+                    alt="instagram de anderson gil para contactarlo"
                   />
 
                 </a>
