@@ -18,8 +18,8 @@
     "home": {
         "hello": "Welcome, my name is",
         "roll":"Web developer",
-        "quienSoy": "Soy un entusiasta Desarrollador FrontEnd",
-        "resumen":  "Amante de la tecnología🤖, la industria 4.0 🏭 y la innovación en la era digital.",
+        "quienSoy": "I´m a enthusiastic FrontEnd Developer",
+        "resumen":  "Tech lover🤖, the industry 4.0 🏭 and innovation in the digital age.",
         "servicios": {
             "titulo": "Services",
             "paginas": "Corporate Websites",
@@ -56,6 +56,11 @@
         },
         "skills": "React,Sass,Angular,Boostrap,Javascript,HTML,CSS,Git,Docker,Android"
     },
+    "proyectos":{
+        "card": {
+            "verMas": "See more about"
+        } 
+     },
     "modalProyectos": {
         "1":{
             "titulo": "FoundussApp",
@@ -69,20 +74,20 @@
             "tipo":"Aplicación Web",
             "cliente": "Ruby",
             "modalidad": "Remote",
-            "descripcion": ""
+            "descripcion": "Development of private interfaces as a freelance collaboration to the Ruby company, in a web application with consumption of REST API in several complete CRUDS, reactive forms with static and dynamic fields, pipe and code standardization through the use of a linter."
         },
         "3":{
             "titulo":"Guitarras invie",
             "tipo":"Aplicación Web",
             "modalidad": "Remote",
-            "descripcion": "Aplicación de practica (NO responsive, se recomienda probar en una desktop) hecha en reactJs cuya finalidad son las animaciones en ReactJs. Cuenta con un 'EasterEgg'. Para ver las animaciones escribir en el teclado recién cargue la pagina 'invie' (sin las comillas) y para volverla a su estado inicial, teclear 'goback' (sin las comillas,nuevamente)"
+            "descripcion": "Practice application (NOT RESPONSIVE, it is recommended to test on a desktop) made in reactJs whose purpose is animations in ReactJs. It has an 'EasterEgg'. To see the animations typing on the keyboard just fully load the page 'invie' (without the quotes) and to return it to its initial state, type 'goback' (without the quotes, again)."
         },
         "4":{
             "titulo": "Tienda Virtual, proyecto final académico",
             "tipo":"Hybrid mobile app",            
             "cliente": "CADIF1",
             "modalidad": "Remote",
-            "descripcion": ""
+            "descripcion": "The application had a payment gateway, a shopping cart, API consumption for displaying products, creating interfaces, and filter by categories for the products."
         },
         "categoria":"Category",
         "cliente":"Client",

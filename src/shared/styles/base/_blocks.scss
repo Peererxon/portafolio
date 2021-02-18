@@ -3,7 +3,11 @@
     height: 280px;
     overflow: hidden;
     position: relative; //for the arrows of slick
-    cursor: pointer;
+    cursor:grab;
+
+    :active{
+        cursor: grabbing;
+    }
     &-fullHeight{
         height: initial;
     }

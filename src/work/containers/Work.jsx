@@ -13,12 +13,19 @@ import ionicCadif1carrousel6 from '../../shared/Statics/trabajos/Ionic_proyectoC
 
 // assets foundussMovil proyect
 import imagenPFoundussApp from '../../shared/Statics/trabajos/proyecto_FoundussApp.jpg'
+//END
 
 //assets caprofula proyect
-import imagenPCaprofula from '../../shared/Statics/trabajos/caprofula_edicion_informacion.jpg'
+import imagenPCaprofula from '../../shared/Statics/trabajos/caprofula_tipoPrestamo.png'
 import carprofulacarrousel1 from '../../shared/Statics/trabajos/caprofula_noticias_ejecucion.png'
-
+import carprofulacarrousel2 from '../../shared/Statics/trabajos/caprofula_edicion_informacion.jpg'
 import { useTranslation } from 'react-i18next';
+//END
+
+//assets invie proyect
+import imagenPInvie from '../../shared/Statics/trabajos/invie1.jpeg';
+import inviecarrousel1 from '../../shared/Statics/trabajos/invie2.jpeg'
+//END
 
 //modal
 import { actions as ModalActions } from 'react-redux-modal-flex';
@@ -51,7 +58,8 @@ const Work = () => {
       cliente: t( "modalProyectos:3:cliente" ),
       tipoDeDesarrollo: t( "modalProyectos:3:tipo" ),
       modalidad: t( "modalProyectos:3:modalidad" ),
-      descripcion: t( "modalProyectos:3:descripcion" )
+      descripcion: t( "modalProyectos:3:descripcion" ),
+      imagenPrincipal: imagenPInvie
     }, //invie
     {
       cliente: t( "modalProyectos:4:cliente" ),
@@ -68,7 +76,7 @@ const Work = () => {
   //usa un dispatch del store
   const dispatch = useDispatch()
   const toggleModalProject =
-    ( component) =>
+    ( component ) =>
       (
         ModalActions.toggleModal( {
           component: () => component,
@@ -116,7 +124,7 @@ const Work = () => {
       case "Caprofula":
         const caprofula = {
           ...proyectos[1],
-          images: [imagenPCaprofula, carprofulacarrousel1],
+          images: [imagenPCaprofula, carprofulacarrousel1, carprofulacarrousel2],
           demo: true,
           url: "http://caprofula.com/#/"
         }
@@ -126,7 +134,7 @@ const Work = () => {
       case "Guitarras invie":
         const invie = {
           ...proyectos[2],
-          images: [],
+          images: [imagenPInvie, inviecarrousel1],
           demo: true,
           url: "https://peererxon.github.io/react_animated/"
         }
