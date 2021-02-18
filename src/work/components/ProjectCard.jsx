@@ -8,7 +8,7 @@ const ProjectCard = ( { title, imagen, description, handleClick } ) => {
   const { t } = useTranslation()
   return (
     <div className="project-item">
-      <div className="col s12 m4">
+      <div className="col s12 m6 l4">
         <div className="card hoverable">
 
           <div className="card-image" onClick={() => handleClick( title, description )}>
