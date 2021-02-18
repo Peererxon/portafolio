@@ -54,7 +54,7 @@
             "Binaural": "Web developer. Binaural development software enterprise (2018-2019). Internships in the FrontEnd developer position, while I adapted to agile development methodologies and with the development team (QA, designer, DevOps, developers)",
             "Founduss": "Hybrid mobile app development. Founduss general services company (2019-2020). It´s made an application with ionic, using the device's native storage, the camera and other functionalities. Planning and management of a small development team, for the integration of best software practices."
         },
-        "skills": "React,Sass,Angular,Boostrap,Javascript,HTML,CSS,Git,Docker,Android"
+        "skills": "React,React Router,Redux,Sass,Angular,Boostrap,Javascript,HTML,CSS,Git,Docker,Android"
     },
     "proyectos":{
         "card": {
