@@ -1,7 +1,6 @@
-import React, { memo } from 'react'
-import './styles/SectionBody.scss';
+import React from 'react'
 
-const SectionBodyList = memo( ( { elementos } ) =>
+export const SectionBodyList = ( { elementos } ) =>
   (
 
     <div className="sectionbody">
@@ -9,7 +8,7 @@ const SectionBodyList = memo( ( { elementos } ) =>
         {
           elementos.map( ( elemento, index ) =>
             (
-              <li key= {index}>{elemento}</li>
+              <li key= {index} >{elemento}</li>
             )
           )
         }
@@ -17,6 +16,3 @@ const SectionBodyList = memo( ( { elementos } ) =>
       </ul>
     </div>
   )
-)
-
-export default SectionBodyList;

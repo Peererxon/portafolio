@@ -16,6 +16,9 @@
 
     &__h3{
         margin-top: 0;
+        padding: 15px;
+        text-align: center;
+        font-size: 32px;
     }
     //all referer with the slick library
     .slick-slider{
@@ -31,5 +34,13 @@
     
     .slick-prev{
         left: 0px;
+    }
+}
+
+@media only screen and (min-width:$Tablets){
+    .projectModal{
+        &__h3{
+            font-size:$titleSize-lg;
+        }
     }
 }

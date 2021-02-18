@@ -5,8 +5,8 @@ import './styles/Resume.scss';
 import { Heading } from '../components/Heading';
 import { Sections } from './Sections';
 import { SectionTitle } from '../components/SectionTitle';
-import SectionBody from '../components/SectionBody';
-import SectionBodyList from '../components/SectionBodyList';
+import { SectionBody } from '../components/SectionBody';
+import { SectionBodyList } from '../components/SectionBodyList';
 import SkillsContainer from './SkillsContainer';
 
 // eslint-disable-next-line brace-style
@@ -78,7 +78,7 @@ const Resume = () => {
               return <SectionTitle key={index} title={titulo} body= {<SectionBodyList elementos={contenidos}/>} />
             }
             else
-            {//es un objeto
+            {//contenidos es un objeto
               const elementos = contenidos.map( ( elemento, index ) => <SectionBody key= { index } elemento={elemento}/> )
               return <SectionTitle key={index} title={titulo} body= {elementos} />
             }
@@ -94,7 +94,6 @@ const Resume = () => {
       </Sections>
       <SkillsContainer />
     </div>
-
 
   )
 }
