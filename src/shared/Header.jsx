@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/Header.scss";
-import Logo from './Statics/frontal-min.png';
+import Logo from './Statics/frontal-min.jpg';
 import i18next from 'i18next';
 import { useTranslation } from "react-i18next";
 
