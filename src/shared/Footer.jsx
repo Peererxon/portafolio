@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/Footer.scss';
-import { Slide, Roll, Bounce } from "react-awesome-reveal";
+import { Slide, Roll, Zoom } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import { screenWidth } from './utils/js';
 //redes
@@ -55,7 +55,7 @@ const Footer = () => {
           {/* ENDTITLE */}
 
           {/* NETWORKS */}
-          { screenWidth < 600 ?
+          { screenWidth > 600 ?
             <Roll cascade triggerOnce={true}>
               <div className="col col--no-padding s12 m3">
                 <a href="https://www.facebook.com/peererxon" rel="noopener noreferrer" target="_blank" >
@@ -101,7 +101,7 @@ const Footer = () => {
                 </a>
               </div>
             </Roll> :
-            <Bounce cascade triggerOnce={true}>
+            <Zoom cascade triggerOnce={true} direction="down">
               <div className="col col--no-padding s12 m3">
                 <a href="https://www.facebook.com/peererxon" rel="noopener noreferrer" target="_blank" >
                   <img loading="lazy"
@@ -145,7 +145,7 @@ const Footer = () => {
                   />
                 </a>
               </div>
-            </Bounce>
+            </Zoom>
           }
           {/* ENDNETWORKS */}
         </div>

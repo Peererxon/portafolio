@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/PreviewMyselft.scss';
-import micara from '../../shared/Statics/frontal-min.png';
+import micara from '../../shared/Statics/frontal-min.jpg';
 import { useTranslation } from 'react-i18next';
 
 // eslint-disable-next-line brace-style
@@ -23,7 +23,7 @@ const PreviewMyselft = () => {
             </div>
           </div>
         </div>
-                
+
       </div>
     </div>
   )
