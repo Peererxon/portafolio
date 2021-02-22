@@ -36,14 +36,17 @@
     }
 }
 
-.footer__contact_h5{
+.footer__contact_h2{
     text-align: center;
+    h2{
+        font-size: 1.64rem;
+    }
 }
 
-@media screen and (min-width:$Tablets){
+@media screen and (min-width:$Desktops){
 
     .footer__contact {
-        &_h5{
+        &_h2{
             width: 150px;
         }
         .hr--reveal{
