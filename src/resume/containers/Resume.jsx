@@ -60,9 +60,9 @@ const Resume = () => {
   secciones[experienciaLaboralIndex].contenidos = [binauralExperience, foundussExperience]
   secciones[proyectosDestacadosIndex].contenidos = [foundussApp, caprofulaWeb]
   //////////////////////////////////////////////////////// END CARGANDO SECCIONES //////////////////////////////////////////////////////
-  console.group( "secciones:" )
+/*   console.group( "secciones:" )
   console.table( secciones )
-  console.groupEnd()
+  console.groupEnd() */
   return (
     <div className = "Resume">
       <Heading title={t( "resume:title" )} body={t( "resume:aspiracion" )}/>
