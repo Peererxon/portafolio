@@ -102,7 +102,7 @@ class AsNavFor extends Component {
     ]
     return (
       <div className= "services">
-        <Zoom direction="right">
+        <Zoom direction="right col s12" >
           <h2 className="services__h2">{this.t( "home:servicios:titulo" )}</h2>
         </Zoom>
         <Slider
