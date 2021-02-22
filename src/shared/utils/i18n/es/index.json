@@ -34,7 +34,7 @@
     },
     "resume": {
         "title": "Resumen de Anderson",
-        "aspiracion": "Mejorar mis habilidades de Desarrollo a través de la experiencia laboral en equipo.",
+        "aspiracion": "Expectativas del empleo: Mejorar mis habilidades de Desarrollo a través de la experiencia laboral en equipo.",
         "secciones":{
             "titulos": "Experiencia Laboral,Estudios Profesionales,Habilidades,Proyectos más destacados",
             "habilidades": "React,Redux,Angular,Ionic,Git,Sass,Html,Css,Javascript,Docker,Webpack"

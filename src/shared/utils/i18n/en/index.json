@@ -34,7 +34,7 @@
     },
     "resume": {
         "title": "Anderson's resume",
-        "aspiracion": "Improve my Development skills through teamwork experience.",
+        "aspiracion": "Job's expectation: Improve my Development skills through teamwork experience.",
         "secciones":{
             "titulos": "Professional Experience,Professional studies,Skills,Featured projects",
             "habilidades": "React,Redux,Angular,Ionic,Git,Sass,Html,Css,Javascript,Docker,Webpack"
@@ -43,7 +43,7 @@
             "titulos":"Carrera técnica programador FrontEnd (paquete de cursos),Escuela de Javascript(paquete de cursos),Fundamentos de Ingenieria de Software",
             "contenidos":"Viewed courses: html, css, preprocessors, angular, JavaScript, typescript, object oriented programming, ionic, programming logic, jQuery, Bootstrap. Viewed courses: Reactjs, React router, Basic Webpack, JavaScript, git, frontend developer course, Prework: good practices and development environment.",
             "platziEscuelaJS": "Javascript School (platzi). Platzi education platform (2019-2020). Viewed courses: Reactjs, React router, Basic Webpack, JavaScript, git, frontend developer course, Prework: good practices and development environment",
-            "cadif1": "FrontEnd technical programmer career. Academy Cadif1 (2018-2019). Cursos vistos: html, css, preprocesadores, angular ,JavaScript, typescript, programación orientada a objetos,  ionic, lógica de programación, jQuery, Bootstrap",
+            "cadif1": "FrontEnd technical programmer career. Academy Cadif1 (2018-2019). Viewed courses: html, css, preprocesadores, angular ,JavaScript, typescript, programación orientada a objetos,  ionic, lógica de programación, jQuery, Bootstrap",
             "platziArquitectura": "Fundamentals of Software Engineering. Platzi education platform (2019)"
         },
         "proyectos" : {
