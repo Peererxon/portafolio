@@ -20,7 +20,7 @@ const Header = () => {
             <span className=" hide-on-med-and-down switch switch--large">
               <label>
                 <span role="img" aria-label="bandera de estados españa">🇪🇸</span>
-                <input type="checkbox" defaultChecked={( i18next.language === "en" ) ? true: false} onChange= {( e ) => e.target.checked ? i18next.changeLanguage( 'en' ) : i18next.changeLanguage( 'es' ) } />
+                <input type="checkbox" defaultChecked={( i18next.language.includes( 'en' ) ) ? true: false} onChange= {( e ) => e.target.checked ? i18next.changeLanguage( 'en' ) : i18next.changeLanguage( 'es' ) } />
                 <span className="lever"/>
                 <span role="img" aria-label="bandera de estados unidos">🇺🇸</span>
               </label>
@@ -96,7 +96,7 @@ const Header = () => {
                   <div className="switch">
                     <label>
                       <span role="img" aria-label="bandera de estados españa">🇪🇸</span>
-                      <input type="checkbox" defaultChecked={( i18next.language === "en" ) ? true: false} onChange= {( e ) => e.target.checked ? i18next.changeLanguage( 'en' ) : i18next.changeLanguage( 'es' ) } />
+                      <input type="checkbox" defaultChecked={( i18next.language.includes( 'en' ) ) ? true: false} onChange= {( e ) => e.target.checked ? i18next.changeLanguage( 'en' ) : i18next.changeLanguage( 'es' ) } />
                       <span className="lever"/>
                       <span role="img" aria-label="bandera de estados unidos">🇺🇸</span>
                     </label>
