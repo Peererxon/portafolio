@@ -20,6 +20,8 @@ class AsNavFor extends Component {
     {
       dots: true,
       infinite: false,
+      arrows: false,
+      centerMode: false,
       lazyLoad: true,
       speed: 500,
       slidesToShow: 3,
@@ -48,8 +50,6 @@ class AsNavFor extends Component {
           {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
-            centerMode: false,
           }
         }
         //these breakpoints are made by the sizes of materialize

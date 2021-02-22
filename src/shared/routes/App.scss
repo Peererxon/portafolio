@@ -1,4 +1,5 @@
 @import '../styles/vars';
+@import '../styles/base/fonts';
 @import '../styles/base/globals';
 @import '../styles/bodyStyles';
 @import '../styles/base/botones';
@@ -6,4 +7,8 @@
 p{
     font-size: $text-s;
     color: white;
+}
+
+h1,h2,h3{
+    font-family: 'Nunito', sans-serif;
 }

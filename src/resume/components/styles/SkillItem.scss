@@ -3,8 +3,15 @@
     margin-top: 10px;
     text-align: center;
     margin-bottom: 40px;
+    max-height: 110px;
+    overflow: hidden;
     &__p{
         color: $palet2;
+    }
+    
+    &__img{
+        width: 5em;
+        min-height: 65px;
     }
 
 }
@@ -12,6 +19,7 @@
 @media only screen and (min-width:$PhonesLandscape){
     .skill{
         perspective: 100px;
+        overflow: visible;
     
         &__img{
             position: relative;

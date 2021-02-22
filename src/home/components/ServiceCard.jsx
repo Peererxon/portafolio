@@ -11,7 +11,7 @@ export default function ServiceCard( { service } ) {
           <Roll cascade triggerOnce>
             <img src={service.image} alt="" className="cardServices__img"/>
 
-            <h2 className="cardServices__h2"> {service.title} </h2>
+            <h3 className="cardServices__h3"> {service.title} </h3>
 
             <p className="cardServices__p">
               {service.description}
