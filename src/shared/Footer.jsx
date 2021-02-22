@@ -18,9 +18,9 @@ const Footer = () => {
     <footer className="footer--card">
       <div className="row row--no-mb">
         <div className="col l6 offset-s3 s6 footer__contact">
-          <div className = "footer__contact_h5">
+          <div className = "footer__contact_h2">
 
-            <h5 className="white-text">{ t( "layout:footer:titulo" ) }</h5>
+            <h2 className="white-text">{ t( "layout:footer:titulo" ) }</h2>
             <hr className="hr--reveal" />
           </div>
           {/* MAILTO*/}

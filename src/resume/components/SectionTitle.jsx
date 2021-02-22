@@ -9,7 +9,7 @@ export const SectionTitle = memo( ( { title, body } ) =>
       <div className="col s12 m6">
         <div className="sectionTitle">
           <div>
-            <h2 className ="sectionTitle__h2">{title}</h2>
+            <h3 className ="sectionTitle__h3">{title}</h3>
           </div>
         </div>
         {body}

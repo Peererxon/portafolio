@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/hero.scss';
+import './styles/Hero.scss';
 import background from '../../shared/Statics/hero_test.svg';
 import { useTranslation } from 'react-i18next';
 import { Slide } from "react-awesome-reveal";
@@ -22,7 +22,6 @@ const Hero = () => {
 
                 <div>
                   <h2 className="backgraundHero__descript">{t('home:roll')}</h2>
-                  <span style= {{ fontSize: "1px", color: "gray" }} >picture for freepick</span>
                 </div>
               </div>
             </div>{/* <!--EndHero--> */}
