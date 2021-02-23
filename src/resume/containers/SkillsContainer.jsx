@@ -19,6 +19,7 @@ import
 } from '@fortawesome/free-brands-svg-icons';
 import reduxIcon from '../../shared/Statics/skills/redux.svg'
 import reactRouterIcon from '../../shared/Statics/skills/react-router.svg'
+import ionicIcon from '../../shared/Statics/skills/ionic.svg';
 // eslint-disable-next-line brace-style
 const SkillsContainer = () => {
   const { t } = useTranslation();
@@ -108,7 +109,14 @@ const SkillsContainer = () => {
         fontAwesome = false
         break;
 
+      case "ionic":
+        svg = ionicIcon
+        svgColor = "#3880ff"
+        fontAwesome = false;
+        break;
+
       default:
+        console.error( "Skill ivalid sended" )
         break;
     }
 

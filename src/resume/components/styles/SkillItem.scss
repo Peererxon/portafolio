@@ -4,9 +4,9 @@
     text-align: center;
     margin-bottom: 40px;
     max-height: 110px;
-    overflow: hidden;
     &__p{
         color: $palet2;
+        overflow-x: hidden;
     }
     
     &__img{
@@ -30,6 +30,7 @@
         }
         &__p{
             position: relative;
+            overflow-x: visible;
             z-index: 1;
             transform: translate3d(0,-50px,-40px);
             transition: transform 0.7s;
