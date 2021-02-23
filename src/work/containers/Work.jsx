@@ -29,8 +29,9 @@ import inviecarrousel1 from '../../shared/Statics/trabajos/invie2.jpeg'
 
 //modal
 import { actions as ModalActions } from 'react-redux-modal-flex';
-import ModalProject from '../components/ProjectsModal';
 import { useDispatch } from 'react-redux';
+const ModalProjectPromise = import( /* webpackChunkName: "ModalProjectLazyPromise" */ '../components/ProjectsModal' );
+const ModalProject = React.lazy( ()=> ModalProjectPromise );
 
 // eslint-disable-next-line brace-style
 const Work = () => {
