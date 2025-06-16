@@ -1,0 +1,40 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  display: flex; // Added for centering, works well with modal-content styling
+  align-items: center; // Added for centering
+  justify-content: center; // Added for centering
+}
+
+.modal-content {
+  position: relative; // Changed from absolute for better flex centering
+  // top: 50%; // Removed, flex centering handles this
+  // left: 50%; // Removed, flex centering handles this
+  // transform: translate(-50%, -50%); // Removed, flex centering handles this
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  outline: none;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Added a basic box shadow
+  animation: zoomIn 0.2s;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); // Adjusted transform for relative positioning
+  }
+  50% {
+    opacity: 0.5; // Adjusted for smoother transition
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); // Ensure it scales to normal size
+  }
+}

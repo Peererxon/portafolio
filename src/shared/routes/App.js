@@ -5,18 +5,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './App.scss';
 import Preloader from '../components/Preloader_line';
-import store from '../redux/store';
+// import store from '../redux/store'; // store is not used here anymore
+import GlobalModalWrapper from '../components/GlobalModalWrapper';
 
 //import Header from '../Header';
 //import Layout from '../Layout';
 
 //Lazy components
 const NotFoundPromise = import( /* webpackChunkName: "notFoundLazyPromise" */ '../../notfound/NotFount' );
-const reactReduxModal = import( /* webpackChunkName: "flexModalLibraryPromise" */ 'react-redux-modal-flex' );
 //esto lo que hace es que notFound se cargue en la primera carga PERO no impida el flujo del render es decir carga en paralelo a la vista actual
 
 const NotFound = React.lazy( ()=> NotFoundPromise );
-const Modal = React.lazy( ()=> reactReduxModal );
 const Layout = React.lazy( () => import ( /* webpackChunkName: "LayoutLazy" */ '../Layout' ) );
 const Resume = React.lazy( () => import ( /* webpackChunkName: "ResumeLazy" */ '../../resume' ) );
 const Work = React.lazy( () => import ( /* webpackChunkName: "WorkLazy" */ '../../work' ) );
@@ -39,7 +38,7 @@ function App() {
             </Switch>
           </Suspense>
         </Layout>
-        <Modal store= {store}/>
+        <GlobalModalWrapper />
       </Suspense>
     </BrowserRouter>
   );

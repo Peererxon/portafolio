@@ -28,10 +28,8 @@ import inviecarrousel1 from '../../shared/Statics/trabajos/invie2.jpeg'
 //END
 
 //modal
-import { actions as ModalActions } from 'react-redux-modal-flex';
 import { useDispatch } from 'react-redux';
-const ModalProjectPromise = import( /* webpackChunkName: "ModalProjectLazyPromise" */ '../components/ProjectsModal' );
-const ModalProject = React.lazy( ()=> ModalProjectPromise );
+import { openModal } from '../../shared/redux/modal/modalSlice';
 
 // eslint-disable-next-line brace-style
 const Work = () => {
@@ -76,20 +74,9 @@ const Work = () => {
   //saca información desde el store
   //usa un dispatch del store
   const dispatch = useDispatch()
-  const toggleModalProject =
-    ( component ) =>
-      (
-        ModalActions.toggleModal( {
-          component: () => component,
-          textCancel: t( "modalProyectos:cerrarBoton" ),
-          ok: {
-            text: null
-          }
-
-        } )
-      )
   const handleCardClick = ( title, description ) =>
   {
+    let projectData;
     switch ( title )
     {
       case "Tienda Virtual, proyecto final académico":
@@ -103,46 +90,44 @@ const Work = () => {
           ionicCadif1carrousel5,
           ionicCadif1carrousel6
         ]
-        const proyectoMovilCadif =
-        {
+        projectData = {
           ...proyectos[3],
           images: carrouselIonicCadif1,
           url: "https://gitlab.com/Peererxon/proyectoionic_cadif1",
           demo: false
-        }
-        dispatch( toggleModalProject( <ModalProject {...proyectoMovilCadif} /> ) )
+        };
+        dispatch(openModal({ contentComponentName: 'ProjectsModal', modalContent: projectData }));
         break;
 
       case "FoundussApp":
-        const foundusApp =
-        {
+        projectData = {
           ...proyectos[0],
           images: [imagenPFoundussApp],
           demo: false
-        }
-        dispatch( toggleModalProject( <ModalProject {...foundusApp} /> ) )
-        break
+        };
+        dispatch(openModal({ contentComponentName: 'ProjectsModal', modalContent: projectData }));
+        break;
       case "Caprofula":
-        const caprofula = {
+        projectData = {
           ...proyectos[1],
           images: [imagenPCaprofula, carprofulacarrousel1, carprofulacarrousel2],
           demo: true,
           url: "http://caprofula.com/#/"
-        }
-        dispatch( toggleModalProject( <ModalProject {...caprofula} /> ) )
+        };
+        dispatch(openModal({ contentComponentName: 'ProjectsModal', modalContent: projectData }));
         break;
 
       case "Guitarras invie":
-        const invie = {
+        projectData = {
           ...proyectos[2],
           images: [imagenPInvie, inviecarrousel1],
           demo: true,
           url: "https://peererxon.github.io/react_animated/"
-        }
-        dispatch( toggleModalProject( <ModalProject {...invie} /> ) )
+        };
+        dispatch(openModal({ contentComponentName: 'ProjectsModal', modalContent: projectData }));
         break;
       default:
-        break;
+        return; // Do nothing if title doesn't match
     }
   }
   //estaba asi en la doc, es para prevenir renders innecesarios

@@ -1,15 +1,8 @@
 import { combineReducers } from 'redux';
-import { reducer as modal } from 'react-redux-modal-flex';
 import { asideReducer } from './aside/asideReducer';
+import modalReducer from './modal/modalSlice';
 
 export default combineReducers({
   asideReducer,
-  modal: modal( {
-    classContent: 'modal-content',
-    animation: 'zoomIn',
-    duration: 200,
-    mask: true,
-    title: null,
-    /* initial state, see API reference */
-  } ),
+  modal: modalReducer,
 })
